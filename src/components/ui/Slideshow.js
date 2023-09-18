@@ -3,6 +3,7 @@ import { EffectFade, EffectCoverflow, Pagination, Autoplay } from 'swiper'
 import "swiper/css"
 import "swiper/css/effect-coverflow"
 import "swiper/css/pagination"
+import Image from 'next/image';
 
 export default function Slideshow ({ images, interval = 3000 }) {
   return (
@@ -20,7 +21,7 @@ export default function Slideshow ({ images, interval = 3000 }) {
     >
       {images.map((image, index) => (
         <SwiperSlide key={index}>
-          <img
+          <Image
             className="rounded-xl"
             src={image}
             alt="Inbox user interface"

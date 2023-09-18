@@ -15,8 +15,9 @@ function Tabs (props) {
   const [selected, setSelected] = useState(defaultSelected)
 
   const setActiveTab = useCallback((key) => {
-    setSelected(key)
-  })
+    setSelected(key);
+  }, [setSelected]);
+
   const selectHandler = (event) => {
     setSelected(event.target.value)
   }

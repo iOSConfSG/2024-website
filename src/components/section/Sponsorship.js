@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function SponsorshipSection () {
   return (
     <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
@@ -23,7 +25,7 @@ export default function SponsorshipSection () {
       </div>
       <div className="mt-12 sm:mt-16 lg:mt-0 lg:col-start-1">
         <div className="mx-4">
-          <img
+          <Image
             className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5"
             src="/images/iosconf2019.jpeg"
             alt="iOS Conf SG 2019 group photo"

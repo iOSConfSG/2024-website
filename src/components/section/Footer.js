@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { FooterNavigationData } from "@/data"
+import Image from 'next/image';
 
 export default function Footer () {
   return (
@@ -54,7 +55,7 @@ export default function Footer () {
                     <div className="mt-4">
                       <Link href="https://vercel.com/new??utm_source=iosconfsg&utm_campaign=oss" legacyBehavior>
                         <a target="_blank" rel="noopener noreferrer">
-                          <img className="mt-0 w-24" src="/images/vercel.svg" alt="Powered by Vercel" />
+                          <Image className="mt-0 w-24" src="/images/vercel.svg" alt="Powered by Vercel" />
                         </a>
                       </Link>
                     </div>

@@ -13,8 +13,8 @@ export default function Organisers () {
           <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
             <p>
             Picture this: a bunch of tech enthusiasts who adore iOS and get an adrenaline rush from crafting Swift apps. We practically dream in code. 😄 <br/><br/>
-            Why, you ask? Because Apple's tech playground for developers is like Willy Wonka's Chocolate Factory for us. It's pure magic. 🍏✨<br/><br/>
-            We've got this crazy idea that if we sprinkle a little bit of this magic on all our iOS pals, we can cook up some seriously cool, mind-blowing apps. And so, back in 2015, we birthed iOS Conf SG.<br/><br/>
+            Why, you ask? Because Apple&apos;s tech playground for developers is like Willy Wonka&apos;s Chocolate Factory for us. It&apos;s pure magic. 🍏✨<br/><br/>
+            We&apos;ve got this crazy idea that if we sprinkle a little bit of this magic on all our iOS pals, we can cook up some seriously cool, mind-blowing apps. And so, back in 2015, we birthed iOS Conf SG.<br/><br/>
             Fast forward to today, and guess what? Our little gathering has become the Godzilla of iOS developer conferences in Southeast Asia. 🦖📱<br/>
 
             Join us on this epic adventure, where we turn iOS dreams into reality, one Swift app at a time. 🌟😁 #iOSConfSG
@@ -33,8 +33,8 @@ export default function Organisers () {
                 </li>
               </ul>
             <br />
-            <p>Oh, and by the way, in the world of paperwork and officialdom, we've got a fancy title: <strong>IOS CONF SG PTE. LTD.</strong> <br/>
-            Yep, that's the grown-up name for the crew behind the iOS Conf SG shindig. 🤓📋 #BehindTheCurtain</p>
+            <p>Oh, and by the way, in the world of paperwork and officialdom, we&apos;ve got a fancy title: <strong>IOS CONF SG PTE. LTD.</strong> <br/>
+            Yep, that&apos;s the grown-up name for the crew behind the iOS Conf SG shindig. 🤓📋 #BehindTheCurtain</p>
           </div>
         </div>
         <section id="team" className="w-full text-center py-12 bg-gradient-to-r from-stone-100 to-slate-200">

@@ -1,5 +1,6 @@
 import React from "react"
 import classname from "classnames"
+import Image from 'next/image';
 
 function ScheduleTable (props) {
   const { schedule, tab, showSpeakerBioHandler } = props
@@ -30,7 +31,7 @@ function ScheduleTable (props) {
                     <td className="w-1/4  px-1 sm:px-6 py-3 whitespace-normal align-top">
                       <div className="min-w-0 flex flex-col sm:flex-row items-center">
                         <div className="flex-shrink-0">
-                          <img className="h-16 w-16 rounded-full" src={`images/speakers/${talk.speaker_image}.jpg`} onClick={() => showSpeakerBioHandler(talk.speaker_name)} />
+                          <Image alt="speaker" className="h-16 w-16 rounded-full" src={`images/speakers/${talk.speaker_image}.jpg`} onClick={() => showSpeakerBioHandler(talk.speaker_name)} />
                         </div>
                         <div className="min-w-0 flex-1 flex flex-col items-left px-1 sm:px-4">
                           <button className="font-medium text-left text-orange-600 my-0 underline" onClick={() => showSpeakerBioHandler(talk.speaker_name)}>
