@@ -17,8 +17,8 @@ function formatDate(stringDate, timezone) {
 const localTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone
 const SG_TIMEZONE = 'Asia/Singapore'
 
-const Conference1 = ScheduleData.filter(event => event.activity === "iosconfsg23.day1")
-const Conference2 = ScheduleData.filter(event => event.activity === "iosconfsg23.day2")
+const Conference1 = ScheduleData.filter(event => event.activity === "iosconfsg24.day1")
+const Conference2 = ScheduleData.filter(event => event.activity === "iosconfsg24.day2")
 const sgConference1 = rezoneSchedule(Conference1, SG_TIMEZONE)
 const sgConference2 = rezoneSchedule(Conference2, SG_TIMEZONE)
 
@@ -52,7 +52,7 @@ function selectScheduleForTab (currentTab, timezone) {
   return schedule[location].iosconfsg[currentTab]
 }
 
-  
+
 export default function ScheduleSection () {
   const [showBio, setShowBio] = useState(false)
   const [selectedSpeaker, setSelectedSpeaker] = useState(null)
@@ -101,8 +101,8 @@ function ScheduleTabs (props) {
   return (
     <>
       <Tabs defaultSelected={'day1'} currentTab={selectedTab}>
-        <Tabs.Tab labelKey='day1'>12 January</Tabs.Tab>
-        <Tabs.Tab labelKey='day2'>13 January</Tabs.Tab>
+        <Tabs.Tab labelKey='day1'>18 January</Tabs.Tab>
+        <Tabs.Tab labelKey='day2'>19 January</Tabs.Tab>
       </Tabs>
       <p className="text-sm mx-4 mx-0 my-4">
         Times below are shown in your local time zone <strong>{localTimezone}</strong>.

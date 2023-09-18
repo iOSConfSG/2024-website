@@ -12,7 +12,12 @@ export default function Organisers () {
           <PageTitle title="About Us" />
           <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
             <p>
-            We, a team of developers like you, love iOS and are passionate about building apps in Swift. We are inspired and motivated by the technology and ecosystem Apple provides for developers. <br/> <br/> We believe that if we bring the power of these technologies to every iOS developer we know, we can contribute to building more innovative and better apps. So we started iOS Conf SG in 2015. Since then, the community has grown to make iOS Conf SG <strong>the largest iOS developer conference in South East Asia</strong>.
+            Picture this: a bunch of tech enthusiasts who adore iOS and get an adrenaline rush from crafting Swift apps. We practically dream in code. 😄 <br/><br/>
+            Why, you ask? Because Apple's tech playground for developers is like Willy Wonka's Chocolate Factory for us. It's pure magic. 🍏✨<br/><br/>
+            We've got this crazy idea that if we sprinkle a little bit of this magic on all our iOS pals, we can cook up some seriously cool, mind-blowing apps. And so, back in 2015, we birthed iOS Conf SG.<br/><br/>
+            Fast forward to today, and guess what? Our little gathering has become the Godzilla of iOS developer conferences in Southeast Asia. 🦖📱<br/>
+
+            Join us on this epic adventure, where we turn iOS dreams into reality, one Swift app at a time. 🌟😁 #iOSConfSG
             </p> <br/>
 
             <p>You may contact us:</p>
@@ -28,7 +33,8 @@ export default function Organisers () {
                 </li>
               </ul>
             <br />
-            <p><strong>IOS CONF SG PTE. LTD.</strong> is the registered entity under which we organise the event.</p>
+            <p>Oh, and by the way, in the world of paperwork and officialdom, we've got a fancy title: <strong>IOS CONF SG PTE. LTD.</strong> <br/>
+            Yep, that's the grown-up name for the crew behind the iOS Conf SG shindig. 🤓📋 #BehindTheCurtain</p>
           </div>
         </div>
         <section id="team" className="w-full text-center py-12 bg-gradient-to-r from-stone-100 to-slate-200">
@@ -50,7 +56,7 @@ export default function Organisers () {
           </div>
         </section>
       </main>
-      
+
       <Footer/>
     </div>
   )

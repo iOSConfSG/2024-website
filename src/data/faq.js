@@ -53,12 +53,7 @@ const faq = [
     id: 8,
     question: "How can I speak at iOS Conf SG 2024?",
     answer: "Currently, all talks have been finalized. We look forward for your talk proposal for 2024!",
-  },
-  {
-    id: 9,
-    question: "Why do you ask for my Covid-19 vaccination status?",
-    answer: "We aim to keep everyone safe. Therefore, we seek your understanding and cooperation in conducting a smooth event. Please refer to the guidelines below.",
-  },
+  }
 ]
 
 export default faq

@@ -10,6 +10,7 @@ const footerNavigation = {
     { name: 'Twitter', href: 'https://twitter.com/iosdevscout' },
   ],
   pastEventsOne: [
+    { name: 'iOS Conf SG 2023', href: 'https://2023.iosconf.sg/' },
     { name: 'iOS Conf SG 2022', href: 'https://2022.iosconf.sg/' },
     { name: 'iOS Conf SG 2021', href: 'https://2021.iosconf.sg/' },
     { name: 'iOS Conf SG 2020', href: 'https://2020.iosconf.sg/' },
