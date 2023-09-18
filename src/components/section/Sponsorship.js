@@ -5,14 +5,14 @@ export default function SponsorshipSection () {
         <div>
           <div className="mt-6">
             <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
-              Support iOS Conf SG 2023!
+              Support iOS Conf SG 2024!
             </h2>
             <p className="mt-4 text-lg text-gray-500">
               Your support plays important roles in making iOS Conf SG an exceptional event. Showcase your branding in a refreshing way at our conference. Connect with passionate iOS devs from 35+ countries.
             </p>
             <div className="mt-6">
               <a
-                href="/sponsorship_deck_2023.pdf"
+                href="#"
                 className="inline-flex bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:from-purple-700 hover:to-indigo-700"
               >
                 Download Sponsorship Deck

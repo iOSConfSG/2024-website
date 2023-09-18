@@ -23,7 +23,7 @@ export default function Hero () {
               <span className="block text-orange-200">In ☀️ Singapore</span>
             </h1>
             <p className="mt-6 max-w-lg mx-auto text-center text-xl text-indigo-200 sm:max-w-3xl">
-              See you on 12-13 January 2023!<br />
+              See you on 18-19 January 2024!<br />
               Early bird tickets are available from 12 September 2022.
             </p>
             <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
@@ -35,7 +35,7 @@ export default function Hero () {
                   Speakers
                 </a>
                 <a
-                  href="https://ti.to/ios-conf-sg/2023"
+                  href="#"
                   target="_blank"
                   rel="noreferrer"
                   className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-orange-600 bg-opacity-80 hover:bg-opacity-100 sm:px-8"

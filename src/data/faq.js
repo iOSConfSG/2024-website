@@ -1,13 +1,13 @@
 const faq = [
   {
     id: 1,
-    question: "What is the focus of iOS Conf SG 2023?",
+    question: "What is the focus of iOS Conf SG 2024?",
     answer: "We are back for an in-person event again! That means our focus is all of you, iOS Engineers to learn something new, to raise your own bar and have tons of fun.",
   },
   {
     id: 2,
     question: "When and where will the conference be held?",
-    answer: "The conference starts on Thursday, 12 January 2023, 2-6pm (registration starts at 1pm) and Friday, 13 January 2023, 9am-6pm at Shaw Foundation Alumni House, 11 Kent Ridge Drive, Singapore 119244. The workshop will be held in the same venue",
+    answer: "The conference starts on Thursday, 18 January 2024, 2-6pm (registration starts at 1pm) and Friday, 19 January 2024, 9am-6pm at Shaw Foundation Alumni House, 11 Kent Ridge Drive, Singapore 119244. The workshop will be held in the same venue",
   },
   {
     id: 3,
@@ -51,7 +51,7 @@ const faq = [
   },
   {
     id: 8,
-    question: "How can I speak at iOS Conf SG 2023?",
+    question: "How can I speak at iOS Conf SG 2024?",
     answer: "Currently, all talks have been finalized. We look forward for your talk proposal for 2024!",
   },
   {

@@ -16,7 +16,7 @@ const organisers = [
       "imageUrl": "/images/organisers/melvin.jpg",
       "twitter": "",
       "linkedin": "melvintansl",
-    },    
+    },
     {
       "name": "Janina Kutyn",
       "imageUrl": "/images/organisers/janina.jpeg",
@@ -46,12 +46,6 @@ const organisers = [
       "imageUrl": "/images/organisers/timshim.jpeg",
       "twitter": "",
       "linkedin": "tim-shim-793aa04",
-    },
-    {
-      "name": "Bunty Mandan",
-      "imageUrl": "/images/organisers/bunty.jpg",
-      "twitter": "buntylm",
-      "linkedin": "",
     },
     {
       "name": "Nadun De Silva",

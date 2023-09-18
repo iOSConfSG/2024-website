@@ -1,4 +1,4 @@
-iOS Conf SG 2023 website is created with [Next.js](https://nextjs.org/) and hosted on [Vercel](https://vercel.com/new??utm_source=iosconfsg&utm_campaign=oss).
+iOS Conf SG 2024 website is created with [Next.js](https://nextjs.org/) and hosted on [Vercel](https://vercel.com/new??utm_source=iosconfsg&utm_campaign=oss).
 
 ## Getting Started
 
@@ -27,7 +27,7 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-## Powered by 
+## Powered by
 
 <a href="https://vercel.com/new??utm_source=iosconfsg&utm_campaign=oss">
 <img src="/public/images/vercel.svg">
