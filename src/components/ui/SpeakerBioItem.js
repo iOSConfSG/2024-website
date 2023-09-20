@@ -14,7 +14,9 @@ function SpeakerBioItem (props) {
     <div className="space-y-6">
       { speaker &&
         <>
-          <Image alt="speaker" className="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56" src={speaker.imageUrl} onClick={handleClick} />
+          <div className="relative h-40 w-40 mx-auto">
+            <Image alt="speaker" className="rounded-full xl:w-56 xl:h-56" fill={true} src={speaker.imageUrl} onClick={handleClick} />
+          </div>
           <div className="space-y-2">
             <div className="flex-col justify-center text-lg leading-6 font-medium space-y-1">
               <h4 className="text-center text-gray-900">{speaker.name}</h4>

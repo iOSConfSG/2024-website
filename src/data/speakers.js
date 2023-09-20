@@ -2,7 +2,7 @@ const speakers = [
   {
     "name": "Speaker Name",
     "company": "Speaker Company",
-    "imageUrl": "/images/speakers/speaker.png",
+    "imageUrl": "/images/speakers/who.jpg",
     "companyUrl": "https://www.speakercompany.com/",
     "twitter": "speakertwitter",
     "linkedin": "",

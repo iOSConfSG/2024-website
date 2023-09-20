@@ -22,10 +22,12 @@ export default function Slideshow ({ images, interval = 3000 }) {
       {images.map((image, index) => (
         <SwiperSlide key={index}>
           <Image
-            className="rounded-xl"
+            className="rounded-xl mx-auto"
             src={image}
-            alt="Inbox user interface"
-          />
+              alt="Inbox user interface"
+            width={560}
+            height={420}
+            />
         </SwiperSlide>
       ))
     }

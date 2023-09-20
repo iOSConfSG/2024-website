@@ -24,11 +24,12 @@ export default function SponsorshipSection () {
         </div>
       </div>
       <div className="mt-12 sm:mt-16 lg:mt-0 lg:col-start-1">
-        <div className="mx-4">
+        <div className="mx-4 relative h-72">
           <Image
             className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5"
             src="/images/iosconf2019.jpeg"
             alt="iOS Conf SG 2019 group photo"
+            fill={true}
           />
         </div>
       </div>
