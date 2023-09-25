@@ -62,7 +62,7 @@ const menuItems = [
 export default function Header () {
   return (
     <header className="sticky w-full z-10 top-0">
-      <Popover className="relative bg-white">
+      <Popover className="relative bg-black">
         <div className="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <Link href="/" className="cursor-pointer" legacyBehavior>
@@ -93,7 +93,7 @@ export default function Header () {
                 <a
                   key={item.id}
                   href={item.href}
-                  className="text-base font-medium text-gray-500 hover:text-gray-900">
+                  className="text-base font-medium text-slate-300 hover:text-orange-300">
                   {item.title}
                 </a>
 

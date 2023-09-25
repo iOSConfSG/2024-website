@@ -24,7 +24,7 @@ export default function Slideshow ({ images, interval = 3000 }) {
           <Image
             className="rounded-xl mx-auto"
             src={image}
-              alt="Inbox user interface"
+            alt="Image slideshow"
             width={560}
             height={420}
             />

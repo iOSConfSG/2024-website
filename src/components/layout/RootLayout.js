@@ -8,7 +8,8 @@ import {
   Sponsors,
   Tickets,
   Venue,
-  Sponsorship
+  Sponsorship,
+  InfiniteCarousell
 } from "@/components"
 import Image from "next/image"
 import Script from "next/script"
@@ -30,6 +31,7 @@ export default function RootLayout() {
       <main>
         {/* Hero section */}
         <Hero />
+        <InfiniteCarousell />
 
         {/* Logo Cloud */}
         <LogoCloud />
