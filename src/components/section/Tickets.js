@@ -30,7 +30,7 @@ export default function TicketSection () {
           <p className="mt-3 text-3xl font-extrabold text-white">
             Tickets
           </p>
-          {/* <tito-widget event="ios-conf-sg/2023"></tito-widget>               */}
+          <tito-widget event="ios-conf-sg/2024"></tito-widget>
         </div>
       </div>
     </div>

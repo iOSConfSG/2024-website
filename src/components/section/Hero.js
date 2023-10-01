@@ -24,7 +24,7 @@ export default function Hero () {
                   Speakers
                 </a>
                 <a
-                  href="#"
+                  href="https://ti.to/ios-conf-sg/2024"
                   target="_blank"
                   rel="noreferrer"
                   className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-orange-600 hover:bg-opacity-100 sm:px-8"
