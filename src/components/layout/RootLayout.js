@@ -11,7 +11,6 @@ import {
   Sponsorship,
   InfiniteCarousell
 } from "@/components"
-import Image from "next/image"
 import Script from "next/script"
 
 const slideshowImages = [
@@ -33,10 +32,10 @@ export default function RootLayout() {
       <main>
         {/* Hero section */}
         <Hero />
-        <InfiniteCarousell />
 
         {/* Logo Cloud */}
         <LogoCloud />
+        <InfiniteCarousell />
 
         <Speakers />
 
