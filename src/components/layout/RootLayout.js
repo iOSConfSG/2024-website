@@ -8,16 +8,18 @@ import {
   Sponsors,
   Tickets,
   Venue,
-  Sponsorship
+  Sponsorship,
+  InfiniteCarousell
 } from "@/components"
-import Image from "next/image"
 import Script from "next/script"
 
 const slideshowImages = [
+  "/images/iosconf2023.jpeg",
   "/images/iosconf2022.jpeg",
   "/images/iosconf2022-day1.jpeg",
   "/images/iosconf2022-workshop.jpg",
   "/images/iosconf2021-workshop.jpeg",
+  "/images/iosconf2019.jpeg",
   "/images/iosconfsg-workshop.jpg",
 ]
 
@@ -33,6 +35,7 @@ export default function RootLayout() {
 
         {/* Logo Cloud */}
         <LogoCloud />
+        <InfiniteCarousell />
 
         <Speakers />
 
@@ -44,17 +47,16 @@ export default function RootLayout() {
               <div className="px-4 max-w-xl mx-auto sm:px-6 lg:max-w-none lg:mx-0 lg:px-0">
                 <div className="mt-6">
                   <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
-                    An iOS-packed workshop and conference
+                    A comprehensive workshop and conference focused on iOS technology.
                   </h2>
                   <p className="mt-4 text-lg text-gray-500">
-                    iOS Conf SG is the largest gathering of iOS and Apple developers in South East Asia.<br/><br/>We have had <strong>5</strong> fantastic in-person conferences and <strong>2</strong> awesome virtual conferences. <br/><br/>We can&apos;t wait to see all of you again in Singapore!
+                    iOS Conf SG is the largest gathering of iOS and Apple developers in South East Asia.<br/><br/>Over the years, we have had <strong>6</strong> fantastic in-person conferences and <strong>2</strong> awesome virtual conferences. <br/><br/>We&apos;re eagerly looking forward to reuniting with all of you again in sunny Singapore!
                   </p>
                 </div>
               </div>
               <Slideshow images={slideshowImages} />
             </div>
           </div>
-          <Sponsors />
           <Sponsorship />
         </div>
         <Tickets />

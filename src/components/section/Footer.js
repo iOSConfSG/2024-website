@@ -53,10 +53,12 @@ export default function Footer () {
                 <div className="mt-12 md:mt-0">
                   <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Powered by</h3>
                     <div className="mt-4">
-                      <Link href="https://vercel.com/new??utm_source=iosconfsg&utm_campaign=oss" legacyBehavior>
+                  <Link href="https://vercel.com/new??utm_source=iosconfsg&utm_campaign=oss" legacyBehavior>
+                    <div className="relative">
                         <a target="_blank" rel="noopener noreferrer">
-                          <Image className="mt-0 w-24" src="/images/vercel.svg" alt="Powered by Vercel" />
-                        </a>
+                          <Image className="mt-0 w-24" src="/images/vercel.svg" alt="Powered by Vercel" fill/>
+                    </a>
+                    </div>
                       </Link>
                     </div>
                 </div>
