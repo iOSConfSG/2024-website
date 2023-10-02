@@ -2,57 +2,52 @@ const faq = [
   {
     id: 1,
     question: "What is the focus of iOS Conf SG 2024?",
-    answer: "We are back for an in-person event again! That means our focus is all of you, iOS Engineers to learn something new, to raise your own bar and have tons of fun.",
+    answer: "After a two-year break, iOS Conf SG returned with an exciting in-person event in 2023, and we were overwhelmed by the fantastic response from our community. We're committed to making it even bigger and better than ever before! <br/> <br/> With a slew of new announcements this year, we can hardly contain our excitement about the fresh topics and tools we'll be bringing to the table. Get ready to elevate your skills and have a ton of fun along the way.",
   },
   {
     id: 2,
     question: "When and where will the conference be held?",
-    answer: "The conference starts on Thursday, 18 January 2024, 2-6pm (registration starts at 1pm) and Friday, 19 January 2024, 9am-6pm at Shaw Foundation Alumni House, 11 Kent Ridge Drive, Singapore 119244. The workshop will be held in the same venue",
+    answer: "The conference starts on Thursday, 18 January 2024, 2-6pm (registration starts at 1pm) and Friday, 19 January 2024, 9am-6pm at Shaw Foundation Alumni House, 11 Kent Ridge Drive, Singapore 119244. The workshop will be held in the same venue on the morning of 18th January.",
   },
   {
     id: 3,
     question: "What are the safety rules I need to do?",
-    answer: "Wearing masks are optional for fully vaccinated attendees. However, We encourage you to maintain a safe distance and use your mask when you are in a larger group. If you are unvaccinated, please refer to the guidelines below.",
+    answer: "Wearing masks are optional for fully vaccinated attendees. However, We encourage you to maintain a safe distance and use your mask when you are in a larger group.",
   },
   {
     id: 4,
-    question: "I am coming to Singapore as a traveller, what should I do?",
-    answer: "Please refer to the guidelines below.",
+    question: "What are the ticket types available?",
+    answer:
+      "Bundle ticket holders are in for the full experience, gaining access to both the workshop and conference days, along with all the exciting sessions and activities.<br/><br/>If you have a Conference ONLY ticket, you'll join us for the conference day sessions, but please note that the workshop won't be accessible to you.<br/><br/>And to sweeten the deal, every attendee will receive a fantastic conference swag bag.",
   },
   {
     id: 5,
-    question: "What are the ticket types available?",
-    answer:
-      "Bundle ticket holders will have access to both the workshop and conference days, including all sessions and activities.<br/><br/>Conference ONLY ticket holders will have access to the sessions on the conference day. However, conference ONLY participants won't have access to the workshop.<br/><br/>You will also receive one set of the conference swag.",
-  },
-  {
-    id: 6,
     question:
       "Will there be food?",
     answer:
-      "Breakfast, lunch and snacks will be served on the conference day. There will be snacks on the workshop day. All food served is Halal. Vegetarian options will be available in limited quantities.",
+      "On the conference day, you can look forward to enjoying a delicious breakfast, lunch, and snacks. For the workshop day, we'll have snacks to keep you fueled. Rest assured, all the food we serve is Halal, and while we do offer vegetarian options, please note they'll be available in limited quantities.",
+  },
+  {
+    id: 6,
+    question: "Will I get a refund if I can not attend the event?",
+    answer:
+      "Since we've already made pre-bookings for logistics, we're unable to process refund requests. But, if you find you can't make it, feel free to transfer your registration to a friend or colleague who can join us – we'd love to have them with us.",
   },
   {
     id: 7,
-    question: "Will I get a refund if I can not attend the event?",
-    answer:
-      "As we have pre-booked for the logistics, we cannot accept refund requests. However, you may choose to transfer your registration to a friend or colleague if you cannot attend the event.",
-  },
-  {
-    id: 10,
     question: "Will there be a live streaming?",
     answer:
-      "There won't be live streaming. However, some of the talks will be available on the iOS Conf SG YouTube account later. We will not record the workshop.",
+      "We won't have live streaming available, but here's the good news: You can catch some of the talks on our iOS Conf SG YouTube account after the event. Just a heads up, though – the workshop won't be recorded.",
   },
   {
     id: 8,
     question: "Can I only attend half of the event?",
-    answer: "You still have to pay the full amount. You may watch the session recordings later if you miss a few sessions. However, we strongly encourage you to block your time to attend the entire conference and participate in all activities.",
+    answer: "You'll still need to make the full payment. However, we've got you covered with session recordings if you miss a few sessions. That said, we highly recommend you schedule your time to fully immerse yourself in the conference and enjoy all the activities.",
   },
   {
-    id: 8,
+    id: 9,
     question: "How can I speak at iOS Conf SG 2024?",
-    answer: "Currently, all talks have been finalized. We look forward for your talk proposal for 2024!",
+    answer: "All talks have been finalized for now, but don't worry, we'll be opening the Call for Papers (CFP) for 2025 shortly after our next event. Stay tuned!",
   }
 ]
 

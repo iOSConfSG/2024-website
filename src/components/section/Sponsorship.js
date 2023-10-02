@@ -2,6 +2,7 @@ import Image from 'next/image';
 
 export default function SponsorshipSection () {
   return (
+    <div id="sponsorship" className="bg-white">
     <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
       <div className="px-4 max-w-xl mx-auto sm:px-6">
         <div>
@@ -10,7 +11,7 @@ export default function SponsorshipSection () {
               Empower iOS Conf SG 2024!
             </h2>
             <p className="mt-4 text-lg text-gray-500">
-              Your support plays important roles in making iOS Conf SG an exceptional event. Showcase your branding in a refreshing way at our conference. Connect with passionate iOS devs from 20+ countries.
+              Your invaluable support plays a crucial role in making iOS Conf SG an extraordinary event. Join us to showcase your brand in a unique and refreshing manner at our conference, and seize the opportunity to connect with passionate iOS developers from over 30 countries.
             </p>
             <div className="mt-6">
               <a
@@ -34,6 +35,7 @@ export default function SponsorshipSection () {
           />
         </div>
       </div>
+    </div>
     </div>
   )
 }
