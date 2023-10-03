@@ -34,7 +34,7 @@ const schedule = [
     "speaker_image": "PaulHudson",
     "speaker_twitter": "twostraws",
     "speaker_bio": "Paul is the author of Hacking with Swift, Pro Swift, Swift Design Patterns, Server-Side Swift, Hacking with macOS, Hacking with watchOS, Hacking with tvOS, Swift Coding Challenges, and more. Suffice it to say, he quite likes Swift. And coffee. (But mostly Swift.) (And coffee.)",
-    "talk_description": "To be added",
+    "talk_description": "",
     "talk_type": "workshop",
     "title": "SwiftData Workshop"
   },
@@ -61,7 +61,7 @@ const schedule = [
     "speaker_image": "PaulHudson",
     "speaker_twitter": "twostraws",
     "speaker_bio": "Paul is the author of Hacking with Swift, Pro Swift, Swift Design Patterns, Server-Side Swift, Hacking with macOS, Hacking with watchOS, Hacking with tvOS, Swift Coding Challenges, and more. Suffice it to say, he quite likes Swift. And coffee. (But mostly Swift.) (And coffee.)",
-    "talk_description": "To be added",
+    "talk_description": "",
     "talk_type": "workshop",
     "title": "SwiftData Workshop"
   },
