@@ -87,7 +87,7 @@ const schedule = [
     "speaker_image": "organiser",
     "speaker_name": "Organiser",
     "speaker_twitter": "iosconfsg",
-    "talk_description": "Welcome to iOS Conf SG 2023 🎉",
+    "talk_description": "Welcome to iOS Conf SG 2024 🎉",
     "talk_type": "registration",
     "title": "Check-in 💻 for Conference attendees"
   },

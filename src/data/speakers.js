@@ -6,8 +6,8 @@ const speakers = [
     "companyUrl": "https://www.pixiteapps.com",
     "twitter": "designatednerd",
     "linkedin": "",
-    "shortBio": "Ellen Shapiro, a world-traveling app developer with over a decade of experience, formerly with Kodeco. Ellen's extensive work on iOS and Android apps brings a wealth of knowledge and stories. She's currently crafting the Zinnia app at Pixite in sunny Rochester, New York.",
-    "bio": "Ellen Shapiro, a world-traveling app developer with over a decade of experience, formerly with Kodeco. Ellen's extensive work on iOS and Android apps brings a wealth of knowledge and stories. She's currently crafting the Zinnia app at Pixite in sunny Rochester, New York.",
+    "shortBio": "Ellen has crafted many iOS and Android apps and globe-trotted, sharing her lessons learned. Ellen's been a Kodeco contributor for a decade, co-authored books, and is currently at Pixite. She lives in Rochester, New York, with her wife and two cats.",
+    "bio": "Ellen Shapiro has built a whole lot of iOS and Android apps, and traveled around the world speaking about everything she did wrong while doing so. She has written for Kodeco (fka RayWenderlich.com) for a decade, and is a co-author on Kotlin Apprentice and the forthcoming edition of Android Apprentice. She is currently at Pixite working on Zinnia, a journal/planner app, and lives in Rochester, New York with her wife and two cats. She can be found on social media at https://mastodon.social/@designatednerd, or, if you really really like cat photos, https://www.instagram.com/loudguitars/.",
   },
   {
     "name": "Maxim Cramer",
@@ -16,8 +16,8 @@ const speakers = [
     "companyUrl": "https://mennenia.com",
     "twitter": "mennenia",
     "linkedin": "",
-    "shortBio": "Maxim Cramer, the founder of MENNENIA, and an Emmy award-winning app creator. With a track record of successful apps and Apple's seal of approval, Maxim is your trusted guide to navigating the tech landscape. Join the mission to simplify tech at MENNENIA and level up with TechLiteracy®.",
-    "bio": "Maxim Cramer, the founder of MENNENIA, and an Emmy award-winning app creator. With a track record of successful apps and Apple's seal of approval, Maxim is your trusted guide to navigating the tech landscape. Join the mission to simplify tech at MENNENIA and level up with TechLiteracy®.",
+    "shortBio": "Maxim is the found of MENNENIA and an Emmy-winning app creator. With a proven track record of successful apps and Apple's stamp of approval, Maxim is your trusted tech navigator. She is on a mission to simplify technology and enhance people's skills with TechLiteracy®.",
+    "bio": "Maxim is the found of MENNENIA and an Emmy-winning app creator. With a proven track record of successful apps and Apple's stamp of approval, Maxim is your trusted tech navigator. She is on a mission to simplify technology and enhance people's skills with TechLiteracy®.",
   },
   {
     "name": "Paul Hudson",
@@ -26,8 +26,8 @@ const speakers = [
     "companyUrl": "https://www.hackingwithswift.com",
     "twitter": "twostraws",
     "linkedin": "",
-    "shortBio": "Paul Hudson, the author of Hacking with Swift, is a true Swift enthusiast on a mission (and fueled by coffee). Brace for an exhilarating journey through the world of iOS development with Paul.",
-    "bio": "Paul Hudson, the author of Hacking with Swift, is a true Swift enthusiast on a mission (and fueled by coffee). Brace for an exhilarating journey through the world of iOS development with Paul.",
+    "shortBio": "Paul Hudson, the author of Hacking with Swift, is a true Swift enthusiast on a mission (and fueled by coffee). Brace for a high-energy dose of Swift and iOS development with Paul.",
+    "bio": "Paul Hudson, the author of Hacking with Swift, is a true Swift enthusiast on a mission (and fueled by coffee). Brace for a high-energy dose of Swift and iOS development with Paul.",
   },
   {
     "name": "Ritesh Gupta",
@@ -46,8 +46,8 @@ const speakers = [
     "companyUrl": "https://www.veo.co",
     "twitter": "zamzampooya",
     "linkedin": "",
-    "shortBio": "Zamzam, a tech leader by day, a movie enthusiast by night, and an explorer at heart. She's your go-to expert in AI and mobile tech, ready to share unique insights from Veo Technologies in Copenhagen. Curious about her music tastes after exploring 105 genres last year? Tune in!",
-    "bio": "Zamzam, a tech leader by day, a movie enthusiast by night, and an explorer at heart. She's your go-to expert in AI and mobile tech, ready to share unique insights from Veo Technologies in Copenhagen. Curious about her music tastes after exploring 105 genres last year? Tune in!",
+    "shortBio": "Zamzam is a tech lead with deep knowledge in AI and mobile technology, currently advancing her expertise at Veo Technologies in Copenhagen. A movie enthusiast post-work  and world traveler at her heart . She also explored 105 music genres last year.",
+    "bio": "Zamzam is a tech lead with deep knowledge in AI and mobile technology, currently advancing her expertise at Veo Technologies in Copenhagen. A movie enthusiast post-work  and world traveler at her heart . She also explored 105 music genres last year.",
   },
   {
     "name": "Rudrank Riyam",
