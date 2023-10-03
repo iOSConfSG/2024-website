@@ -15,7 +15,7 @@ export default function LogoCloud () {
           </div>
           <div className="lg:px-4">
             <p className="text-center md:text-2xl text-xl font-semibold text-white tracking-wide mb-3">
-              Run by iOS Developers, for the community since 2013
+              Run by iOS Developers, for the community since 2015.
             </p>
             <p className="text-center md:text-2xl text-xl text-white">
               iOS Conf SG is recognised as the best iOS conference by the <a href="https://www.hackingwithswift.com/awards" className="underline decoration-orange-300">Swift Community</a>.
