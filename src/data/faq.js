@@ -2,7 +2,7 @@ const faq = [
   {
     id: 1,
     question: "What is the focus of iOS Conf SG 2024?",
-    answer: "After a two-year break, iOS Conf SG returned with an exciting in-person event in 2023, and we were overwhelmed by the fantastic response from our community. We're committed to making it even bigger and better than ever before! <br/> <br/> With a slew of new announcements this year, we can hardly contain our excitement about the fresh topics and tools we'll be bringing to the table. Get ready to elevate your skills and have a ton of fun along the way.",
+    answer: "After 8 successful runs, we are thrilled to announce our return for the 2024 edition of iOS Conf SG. We were overwhelmed by the fantastic response from our community in 2023, and we're committed to making this upcoming event even bigger and better than ever before! 😊 <br/> <br/>With a slew of new announcements this year, we can hardly contain our excitement about the fresh topics and tools we'll be bringing to the table. Get ready to elevate your skills and have a ton of fun along the way. 🚀🌟"
   },
   {
     id: 2,
