@@ -53,7 +53,7 @@ const speakers = [
     "name": "Rudrank Riyam",
     "company": "iOS Developer",
     "imageUrl": "/images/speakers/RudrankRiyam.jpg",
-    "companyUrl": "",
+    "companyUrl": "https://rryam.com",
     "twitter": "rudrankriyam",
     "linkedin": "",
     "shortBio": "Rudrank, a wordsmith and engineer making waves in the Apple universe. When not weaving magic with the Apple Music API and MusicKit, he's crafting compelling content for Apple Platforms. Get ready for an enlightening journey through the tech world with Rudrank.",
