@@ -56,7 +56,16 @@ export default function Footer () {
                   <Link href="https://vercel.com/new??utm_source=iosconfsg&utm_campaign=oss" legacyBehavior>
                     <div className="relative">
                         <a target="_blank" rel="noopener noreferrer">
-                          <Image className="mt-0 w-24" src="/images/vercel.svg" alt="Powered by Vercel" fill/>
+                          {/* <Image className="mt-0 w-24" src="/images/vercel.png" alt="Powered by Vercel" fill/> */}
+                          <Image
+                            src="/images/vercel.svg"
+                            layout="intrinsic"
+                            objectfit="cover"
+                            alt="Powered by Vercel"
+                            className="mt-0 w-24"
+                            height={256}
+                            width={58}
+                          />
                     </a>
                     </div>
                       </Link>
