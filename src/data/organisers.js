@@ -9,7 +9,7 @@ const organisers = [
       "name": "Subhransu Behera",
       "imageUrl": "/images/organisers/subh.jpg",
       "twitter": "subhransu",
-      "linkedin": "",
+      "linkedin": "subhransubehera",
     },
     {
       "name": "Melvin Tan",
