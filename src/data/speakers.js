@@ -49,15 +49,16 @@ const speakers = [
     "shortBio": "Zamzam is a tech lead with deep knowledge in AI and mobile technology, currently advancing her expertise at Veo Technologies in Copenhagen. A movie enthusiast post-work  and world traveler at her heart. She also explored 105 music genres last year.",
     "bio": "Zamzam is a tech lead with deep knowledge in AI and mobile technology, currently advancing her expertise at Veo Technologies in Copenhagen. A movie enthusiast post-work  and world traveler at her heart. She also explored 105 music genres last year.",
   },
+
   {
-    "name": "Rudrank Riyam",
-    "company": "Independent iOS Developer",
-    "imageUrl": "/images/speakers/RudrankRiyam.jpg",
-    "companyUrl": "https://rryam.com",
-    "twitter": "rudrankriyam",
-    "linkedin": "rudrank",
-    "shortBio": "Rudrank, a wordsmith and engineer making waves in the Apple universe. When not weaving magic with the Apple Music API and MusicKit, he's crafting compelling content for Apple Platforms. Get ready for an enlightening journey through the tech world with Rudrank.",
-    "bio": "Rudrank, a wordsmith and engineer making waves in the Apple universe. When not weaving magic with the Apple Music API and MusicKit, he's crafting compelling content for Apple Platforms. Get ready for an enlightening journey through the tech world with Rudrank.",
+    "name": "Junda Ong",
+    "company": "Indie iOS Developer",
+    "imageUrl": "/images/speakers/JundaOng.jpg",
+    "companyUrl": "http://samwize.com",
+    "twitter": "samwize",
+    "linkedin": "junda",
+    "shortBio": "Junda, an iOS developer since 2008, has a track record of indie app launches. Having transitioned from ShopBack to the crypto domain, he's a seasoned tech traveler.",
+    "bio": "Junda, an iOS developer since 2008, has a track record of indie app launches. Having transitioned from ShopBack to the crypto domain, he's a seasoned tech traveler.",
   },
   {
     "name": "Charlene Ho",
@@ -70,16 +71,6 @@ const speakers = [
     "bio": "Charlene, with 11 years in product and user research, champions innovative research methods and creative approaches to convey user insights.",
   },
   {
-    "name": "Junda Ong",
-    "company": "Indie iOS Developer",
-    "imageUrl": "/images/speakers/JundaOng.jpg",
-    "companyUrl": "http://samwize.com",
-    "twitter": "samwize",
-    "linkedin": "junda",
-    "shortBio": "Junda, an iOS developer since 2008, has a track record of indie app launches. Having transitioned from ShopBack to the crypto domain, he's a seasoned tech traveler.",
-    "bio": "Junda, an iOS developer since 2008, has a track record of indie app launches. Having transitioned from ShopBack to the crypto domain, he's a seasoned tech traveler.",
-  },
-  {
     "name": "Lee Kah Seng",
     "company": "iOS Developer, Freelancer",
     "imageUrl": "/images/speakers/LeeKahSeng.jpg",
@@ -88,6 +79,16 @@ const speakers = [
     "linkedin": "leekahseng",
     "shortBio": "Lee, an iOS developer with a decade's experience. He shares insights on iOS development at swiftsenpai.com and empowers SMBs to boost app performance and user experiences.",
     "bio": "Lee, an iOS developer with a decade's experience. He shares insights on iOS development at swiftsenpai.com and empowers SMBs to boost app performance and user experiences.",
+  },
+  {
+    "name": "Rudrank Riyam",
+    "company": "Independent iOS Developer",
+    "imageUrl": "/images/speakers/RudrankRiyam.jpg",
+    "companyUrl": "https://rryam.com",
+    "twitter": "rudrankriyam",
+    "linkedin": "rudrank",
+    "shortBio": "Rudrank, a wordsmith and engineer making waves in the Apple universe. When not weaving magic with the Apple Music API and MusicKit, he's crafting compelling content for Apple Platforms. Get ready for an enlightening journey through the tech world with Rudrank.",
+    "bio": "Rudrank, a wordsmith and engineer making waves in the Apple universe. When not weaving magic with the Apple Music API and MusicKit, he's crafting compelling content for Apple Platforms. Get ready for an enlightening journey through the tech world with Rudrank.",
   },
 ]
 export default speakers
