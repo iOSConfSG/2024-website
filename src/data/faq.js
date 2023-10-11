@@ -7,7 +7,7 @@ const faq = [
   {
     id: 2,
     question: "When and where will the conference be held?",
-    answer: "The conference starts on Thursday, 18 January 2024, 2-6pm (registration starts at 1pm) and Friday, 19 January 2024, 9am-6pm at Shaw Foundation Alumni House, 11 Kent Ridge Drive, Singapore 119244. The workshop will be held in the same venue on the morning of 18th January.",
+    answer: "The conference will commence on Thursday, January 18, 2024, from 2-6 pm (registration starting at 1 pm) and continue on Friday, January 19, 2024, from 9 am to 6 pm at a yet-to-be-disclosed venue in Singapore. The workshop will be held in the same venue on the morning of 18th January.",
   },
   {
     id: 3,
