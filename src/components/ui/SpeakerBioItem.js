@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faTwitter } from "@fortawesome/free-brands-svg-icons/faTwitter"
+import { faXTwitter } from "@fortawesome/free-brands-svg-icons/faXTwitter"
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons/faLinkedin"
 import Image from 'next/image';
 
@@ -8,7 +8,7 @@ function SpeakerBioItem (props) {
   const { handleClick, speaker } = props
 
   const hasLinkedIn = (speaker && Object.prototype.hasOwnProperty.call(speaker, 'linkedin') && speaker.linkedin !== '')
-  const hasTwitter = (speaker && Object.prototype.hasOwnProperty.call(speaker, 'twitter') && speaker.twitter !== '')
+  const hasXTwitter = (speaker && Object.prototype.hasOwnProperty.call(speaker, 'xTwitter') && speaker.xTwitter !== '')
 
   return (
     <div className="space-y-6">
@@ -24,10 +24,10 @@ function SpeakerBioItem (props) {
                 <a href={speaker.companyUrl} target="_blank" rel="noopener noreferrer">{speaker.company}</a>
               </p>
               <div className="flex justify-center">
-              {hasTwitter &&
-                <Link href={`https://twitter.com/${speaker.twitter}`} passHref legacyBehavior>
+              {hasXTwitter &&
+                <Link href={`https://x.com/${speaker.xTwitter}`} passHref legacyBehavior>
                   <a target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon size="1x" icon={faTwitter} />
+                    <FontAwesomeIcon size="1x" icon={faXTwitter} />
                   </a>
                 </Link>
               }
