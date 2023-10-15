@@ -7,7 +7,7 @@ const speakers = [
     "xTwitter": "designatednerd",
     "linkedin": "ellen-shapiro-9b42a86",
     "shortBio": "Ellen has crafted many iOS and Android apps and globe-trotted, sharing her lessons learned. Ellen's been a Kodeco contributor for a decade, co-authored books, and is currently at Pixite. She lives in Rochester, New York, with her wife and two cats.",
-    "bio": "Ellen Shapiro has built a whole lot of iOS and Android apps, and traveled around the world speaking about everything she did wrong while doing so. She has written for Kodeco (fka RayWenderlich.com) for a decade, and is a co-author on Kotlin Apprentice and the forthcoming edition of Android Apprentice. She is currently at Pixite working on Zinnia, a journal/planner app, and lives in Rochester, New York with her wife and two cats. She can be found on social media at https://mastodon.social/@designatednerd, or, if you really really like cat photos, https://www.instagram.com/loudguitars/.",
+    "bio": "Ellen Shapiro has built many iOS and Android apps and travelled around the world speaking about everything she did wrong while doing so. She has written for Kodeco (fka RayWenderlich.com) for a decade and is a co-author of Kotlin Apprentice and the forthcoming edition of Android Apprentice. She is currently at Pixite working on Zinnia, a journal/planner app, and lives in Rochester, New York, with her wife and two cats. She can be found on social media at https://mastodon.social/@designatednerd, or, if you really really like cat photos, https://www.instagram.com/loudguitars/.",
   },
   {
     "name": "Maxim Cramer",
@@ -26,8 +26,8 @@ const speakers = [
     "companyUrl": "https://www.hackingwithswift.com",
     "xTwitter": "twostraws",
     "linkedin": "",
-    "shortBio": "Paul Hudson, the author of Hacking with Swift, is a true Swift enthusiast on a mission (and fueled by coffee). Brace for a high-energy dose of Swift and iOS development with Paul.",
-    "bio": "Paul Hudson, the author of Hacking with Swift, is a true Swift enthusiast on a mission (and fueled by coffee). Brace for a high-energy dose of Swift and iOS development with Paul.",
+    "shortBio": "Paul is the author of Hacking with Swift. He quite likes Swift. And coffee. (But mostly Swift.) (And coffee.)",
+    "bio": "Paul is the author of Hacking with Swift. He quite likes Swift. And coffee. (But mostly Swift.) (And coffee.)",
   },
   {
     "name": "Ritesh Gupta",
@@ -36,8 +36,8 @@ const speakers = [
     "companyUrl": "https://www.atlassian.com",
     "xTwitter": "_riteshhh",
     "linkedin": "ritesh-gupta-a4602124",
-    "shortBio": "Ritesh Gupta, an iOS engineer by day and a Kotlin Multiplatform expert by night. He's known for his contributions to iOS-Dev-Weekly's 295th issue and his prolific writing on Medium. Explore Ritesh's tech adventures at http://riteshhh.com/ – where coding meets creativity.",
-    "bio": "Ritesh Gupta, an iOS engineer by day and a Kotlin Multiplatform expert by night. He's known for his contributions to iOS-Dev-Weekly's 295th issue and his prolific writing on Medium. Explore Ritesh's tech adventures at http://riteshhh.com/ – where coding meets creativity.",
+    "shortBio": "Ritesh Gupta is an iOS engineer by day and a Kotlin Multiplatform expert by night. He's known for his contributions to iOS-Dev-Weekly's 295th issue and his prolific writing on Medium. Explore Ritesh's tech adventures at http://riteshhh.com/ – where coding meets creativity.",
+    "bio": "Ritesh Gupta is an iOS engineer by day and a Kotlin Multiplatform expert by night. He's known for his contributions to iOS-Dev-Weekly's 295th issue and his prolific writing on Medium. Explore Ritesh's tech adventures at http://riteshhh.com/ – where coding meets creativity.",
   },
   {
     "name": "Zamzam Pooya",
@@ -46,8 +46,8 @@ const speakers = [
     "companyUrl": "https://www.veo.co",
     "xTwitter": "zamzampooya",
     "linkedin": "",
-    "shortBio": "Zamzam is a tech lead with deep knowledge in AI and mobile technology, currently advancing her expertise at Veo Technologies in Copenhagen. A movie enthusiast post-work  and world traveler at her heart. She also explored 105 music genres last year.",
-    "bio": "Zamzam is a tech lead with deep knowledge in AI and mobile technology, currently advancing her expertise at Veo Technologies in Copenhagen. A movie enthusiast post-work  and world traveler at her heart. She also explored 105 music genres last year.",
+    "shortBio": "Zamzam is a tech lead with deep knowledge in AI and mobile technology, currently advancing her expertise at Veo Technologies in Copenhagen. A movie enthusiast post-work and a world traveller at her heart, she also explored 105 music genres last year.",
+    "bio": "Zamzam is a tech lead with deep knowledge in AI and mobile technology, currently advancing her expertise at Veo Technologies in Copenhagen. A movie enthusiast post-work and a world traveller at her heart, she also explored 105 music genres last year.",
   },
 
   {
@@ -77,8 +77,8 @@ const speakers = [
     "companyUrl": "https://swiftsenpai.com",
     "xTwitter": "Lee_Kah_Seng",
     "linkedin": "leekahseng",
-    "shortBio": "Lee, an iOS developer with a decade's experience. He shares insights on iOS development at swiftsenpai.com and empowers SMBs to boost app performance and user experiences.",
-    "bio": "Lee, an iOS developer with a decade's experience. He shares insights on iOS development at swiftsenpai.com and empowers SMBs to boost app performance and user experiences.",
+    "shortBio": "Lee is an iOS developer with a decade's experience. He shares insights on iOS development at swiftsenpai.com and empowers SMBs to boost app performance and user experiences.",
+    "bio": "Lee is an iOS developer with a decade's experience. He shares insights on iOS development at swiftsenpai.com and empowers SMBs to boost app performance and user experiences.",
   },
   {
     "name": "Rudrank Riyam",
@@ -87,8 +87,8 @@ const speakers = [
     "companyUrl": "https://rryam.com",
     "xTwitter": "rudrankriyam",
     "linkedin": "rudrank",
-    "shortBio": "Rudrank, a wordsmith and engineer making waves in the Apple universe. When not weaving magic with the Apple Music API and MusicKit, he's crafting compelling content for Apple Platforms. Get ready for an enlightening journey through the tech world with Rudrank.",
-    "bio": "Rudrank, a wordsmith and engineer making waves in the Apple universe. When not weaving magic with the Apple Music API and MusicKit, he's crafting compelling content for Apple Platforms. Get ready for an enlightening journey through the tech world with Rudrank.",
+    "shortBio": "Rudrank, a wordsmith and engineer, is making waves in the Apple universe. When not weaving magic with the Apple Music API and MusicKit, he's crafting compelling content for Apple Platforms. Get ready for an enlightening journey through the tech world with Rudrank.",
+    "bio": "Rudrank, a wordsmith and engineer, is making waves in the Apple universe. When not weaving magic with the Apple Music API and MusicKit, he's crafting compelling content for Apple Platforms. Get ready for an enlightening journey through the tech world with Rudrank.",
   },
 ]
 export default speakers
