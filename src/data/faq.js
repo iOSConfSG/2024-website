@@ -7,7 +7,7 @@ const faq = [
   {
     id: 2,
     question: "When and where will the conference be held?",
-    answer: "The conference will commence on Thursday, January 18, 2024, from 2-6 pm (registration starting at 1 pm) and continue on Friday, January 19, 2024, from 9 am to 6 pm at a yet-to-be-disclosed venue in Singapore. The workshop will be held in the same venue on the morning of 18th January.",
+    answer: "The conference will commence on Thursday, January 18, 2024, from 2-6 pm (registration starting at 1 pm) and continue on Friday, January 19, 2024, from 9 am to 6 pm at SingPost Auditorium, Level 5, 10 Eunos Road 8, Singapore Post Centre, Singapore 408600 (Next to Paya Lebar MRT Station). The workshop will be held in the same venue on the morning of 18th January.",
   },
   {
     id: 3,

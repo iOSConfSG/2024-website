@@ -53,6 +53,12 @@ const organisers = [
       "xTwitter": "enadun",
       "linkedin": "enadun",
     },
+    {
+      "name": "Yee Jia Chen",
+      "imageUrl": "/images/organisers/jiachen.jpeg",
+      "xTwitter": "enadun",
+      "linkedin": "jia-chen-yee",
+    },
 ]
 
 export default organisers
