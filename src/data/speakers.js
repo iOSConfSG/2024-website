@@ -16,8 +16,8 @@ const speakers = [
     "companyUrl": "https://mennenia.com",
     "xTwitter": "mennenia",
     "linkedin": "maxim-cramer-founder",
-    "shortBio": "Maxim is the founder of MENNENIA and an Emmy-winning app creator. With a proven track record of successful apps and Apple's stamp of approval, Maxim is your trusted tech navigator. She is on a mission to simplify technology and enhance people's skills with TechLiteracy®.",
-    "bio": "Maxim is the founder of MENNENIA and an Emmy-winning app creator. With a proven track record of successful apps and Apple's stamp of approval, Maxim is your trusted tech navigator. She is on a mission to simplify technology and enhance people's skills with TechLiteracy®.",
+    "shortBio": "Maxim is the founder of MENNENIA and has worked on award-winning apps since 2009. She effortlessly bridges the worlds of technology and human connection, helping entrepreneurs win with TechLiteracy.",
+    "bio": "Maxim is the founder of MENNENIA and has worked on award-winning apps since 2009. She effortlessly bridges the worlds of technology and human connection, helping entrepreneurs win with TechLiteracy.",
   },
   {
     "name": "Paul Hudson",
