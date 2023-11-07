@@ -56,7 +56,7 @@ const organisers = [
     {
       "name": "Yee Jia Chen",
       "imageUrl": "/images/organisers/jiachen.jpeg",
-      "xTwitter": "enadun",
+      "xTwitter": "",
       "linkedin": "jia-chen-yee",
     },
 ]
