@@ -4,14 +4,16 @@ import classname from "classnames"
 
 export default function SponsorSection () {
   return (
-    <div id="sponsorship" className="bg-white">
+    <div id="sponsors" className="bg-white mt-1">
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-        <p className="text-center mt-6 text-4xl font-semibold text-black">
-          Gold ⭐️ Sponsors
+        <br/>
+        <p className="text-center text-4xl font-semibold text-black">
+          Afterparty 🥳 Sponsors
         </p>
+        <br/> <br/>
         <div className="my-0 lg:my-12 py-12 flex flex-row flex-wrap items-center justify-center gap-8 lg:mt-8">
           {
-            SponsorsData['gold'].map((s, index) => (
+            SponsorsData['afterparty'].map((s, index) => (
               <div key={index} className="relative">
                 <div className={classname("col-span-1 bg-white w-80 flex items-center", s.heightClass)}>
                     <a href={s.imageHref} target="_blank" rel="noreferrer">
@@ -28,6 +30,8 @@ export default function SponsorSection () {
           }
         </div>
       </div>
+      <hr></hr>
+      <br/>
     </div>
   )
 }
