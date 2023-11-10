@@ -6,12 +6,10 @@ export default function SponsorSection () {
   return (
     <div id="sponsors" className="bg-white mt-1">
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-        <br/>
-        <p className="text-center text-4xl font-semibold text-black">
+        <p className="my-6 text-center text-4xl font-semibold text-black">
           Afterparty 🥳 Sponsors
         </p>
-        <br/> <br/>
-        <div className="my-0 lg:my-12 py-12 flex flex-row flex-wrap items-center justify-center gap-8 lg:mt-8">
+        <div className="flex flex-row flex-wrap items-center justify-center gap-8">
           {
             SponsorsData['afterparty'].map((s, index) => (
               <div key={index} className="relative">

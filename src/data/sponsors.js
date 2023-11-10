@@ -5,8 +5,7 @@ const sponsors = {
       name: "RevenueCat",
       imageHref: "https://www.revenuecat.com",
       imageUrl: "/images/logo-revenuecat.jpg",
-      heightClass: "h-16",
-      height: 120,
+      height: 300,
       width: 300
     },
   ],
