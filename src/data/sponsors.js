@@ -1,15 +1,15 @@
 
 const sponsors = {
-  gold: [
+  afterparty: [
     {
-      name: "Your Company",
-      imageHref: "https://yourcompany.com/",
-      imageUrl: "/images/logo-yourcompany.jpg",
+      name: "RevenueCat",
+      imageHref: "https://www.revenuecat.com",
+      imageUrl: "/images/logo-revenuecat.jpg",
       heightClass: "h-16",
-      height: 64,
+      height: 120,
       width: 300
-    }
-  ]
+    },
+  ],
 }
 
 export default sponsors

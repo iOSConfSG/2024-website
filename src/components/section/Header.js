@@ -30,10 +30,10 @@ const menuItems = [
     icon: ClockIcon,
   },
   {
-    id: "sponsorship",
-    title: "Sponsorship",
-    description: "iOS Conf SG 2024 Sponsorship",
-    href: "/#sponsorship",
+    id: "sponsors",
+    title: "Sponsors",
+    description: "iOS Conf SG 2024 Sponsors",
+    href: "/#sponsors",
     icon: HeartIcon,
   },
   {

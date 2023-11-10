@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function SponsorshipSection () {
   return (
-    <div id="sponsorship" className="bg-white">
+    <div className="bg-white">
     <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
       <div className="px-4 max-w-xl mx-auto sm:px-6">
         <div>

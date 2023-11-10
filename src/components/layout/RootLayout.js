@@ -33,6 +33,9 @@ export default function RootLayout() {
         {/* Hero section */}
         <Hero />
 
+        <Sponsors />
+        <Sponsorship />
+
         {/* Logo Cloud */}
         <LogoCloud />
         <InfiniteCarousell />
@@ -57,7 +60,6 @@ export default function RootLayout() {
               <Slideshow images={slideshowImages} />
             </div>
           </div>
-          <Sponsorship />
         </div>
         <Tickets />
         <Venue />
