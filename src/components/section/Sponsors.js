@@ -7,7 +7,7 @@ export default function SponsorSection () {
     <div id="sponsors" className="bg-white mt-1">
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
         <p className="my-6 text-center text-4xl font-semibold text-black">
-          Afterparty 🥳 Sponsors
+          Afterparty 🥳 Sponsor
         </p>
         <div className="flex flex-row flex-wrap items-center justify-center gap-8">
           {
