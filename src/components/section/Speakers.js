@@ -30,7 +30,7 @@ export default function SpeakersSection () {
 
         <center>
         <br/>
-        <strong>More speakers to be announced soon...</strong>
+        <strong>A few more (finalised) speakers to be announced soon...</strong>
         <br/>
         </center>
         <Transition show={showBio} appear={true} enter="ease-out duration-300" enterFrom="opacity-0" enterTo="opacity-100" leave="ease-in duration-200" leaveFrom="opacity-100" leaveTo="opacity-0">
