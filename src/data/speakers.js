@@ -174,7 +174,7 @@ const speakers = [
     "company": "Software Engineer at GXS",
     "imageUrl": "/images/speakers/AnTran.jpg",
     "companyUrl": "https://www.gxs.com.sg",
-    "xTwitter": "",
+    "xTwitter": "antranapp",
     "linkedin": "",
     "shortBio": "An Tran is a Swift enthusiast who loves using Swift to create large scale, user friendly apps used by millions of users with his teams. He also loves sharing Swift contents to his vietnamese Swift fellows, and practicing minimalism.",
     "bio": "An Tran is a Swift enthusiast who loves using Swift to create large scale, user friendly apps used by millions of users with his teams. He also loves sharing Swift contents to his vietnamese Swift fellows, and practicing minimalism.",
