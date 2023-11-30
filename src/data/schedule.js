@@ -491,9 +491,9 @@ const schedule = [
     "speaker_image": "who",
     "speaker_name": "Organiser",
     "speaker_twitter": "iosconfsg",
-    "talk_description": "One-Way Shuttle Bus Will Be Provided",
+    "talk_description": "Something super fun 🎙",
     "talk_type": "afterparty",
-    "title": "Afterparty 🍻 - One-Way Shuttle 🚌 Will Be Provided"
+    "title": "Afterparty 🍻"
   }
 ]
 
