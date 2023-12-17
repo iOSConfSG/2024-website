@@ -1,9 +1,9 @@
 
 import Image from 'next/image';
 
-export default function TicketSection () {
+export default function TicketSection ({ ticketSlug }) {
   return (
-    <div className="relative bg-gray-900">
+    <div className="relative bg-gray-900" id="tickets">
       <div className="h-80 absolute inset-x-0 bottom-0 xl:top-0 xl:h-full">
         <div className="h-full w-full xl:grid xl:grid-cols-2">
           <div className="h-full xl:relative xl:col-start-2">
@@ -30,7 +30,7 @@ export default function TicketSection () {
           <p className="mt-3 text-3xl font-extrabold text-white">
             Tickets
           </p>
-          <tito-widget event="ios-conf-sg/2024"></tito-widget>
+          <tito-widget event={ticketSlug}></tito-widget>
         </div>
       </div>
     </div>

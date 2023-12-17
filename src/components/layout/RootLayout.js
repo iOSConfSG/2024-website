@@ -31,7 +31,7 @@ export default function RootLayout() {
 
       <main>
         {/* Hero section */}
-        <Hero />
+        <Hero/>
 
         <Sponsors />
         <Sponsorship />
@@ -61,7 +61,7 @@ export default function RootLayout() {
             </div>
           </div>
         </div>
-        <Tickets />
+        <Tickets ticketSlug="ios-conf-sg/2024"/>
         <Venue />
       </main>
       <Footer />
