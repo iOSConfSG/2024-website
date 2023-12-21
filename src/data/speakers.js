@@ -70,6 +70,16 @@ const speakers = [
     "bio": "Zamzam is a tech lead with deep knowledge in AI and mobile technology, currently advancing her expertise at Veo Technologies in Copenhagen. A movie enthusiast post-work and a world traveller at her heart, she also explored 105 music genres last year.",
   },
   {
+    "name": "Shiqing Chen",
+    "company": "Principal iOS Engineer at Dyson",
+    "imageUrl": "/images/speakers/Shiqing.jpg",
+    "companyUrl": "https://www.dyson.com",
+    "xTwitter": "",
+    "linkedin": "",
+    "shortBio": "Shiqing has been diving into IoT and mobile development for ages, all jazzed up about how tech can spruce up our daily digs. And, guess what? She's also a fresh mom, juggling the whole baby care thing for her cute bundle of joy. Tech whiz by day, baby whisperer by night - that's her gig!",
+    "bio": "Shiqing has been diving into IoT and mobile development for ages, all jazzed up about how tech can spruce up our daily digs. And, guess what? She's also a fresh mom, juggling the whole baby care thing for her cute bundle of joy. Tech whiz by day, baby whisperer by night - that's her gig!",
+  },
+  {
     "name": "Adrian Eves",
     "company": "Senior Software Engineer at Method",
     "imageUrl": "/images/speakers/AdrianEves.jpg",
