@@ -15,17 +15,38 @@
     "allowJs": true,
     "strict": true,
     "jsx": "preserve",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "module": "esnext",
     "noEmit": true,
     "resolveJsonModule": true,
     "baseUrl": ".",
-    "plugins": [{ "name": "next" }],
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
     "paths": {
-      "@/components/*": ["src/components/*"],
-      "@/components": ["src/components"],
-      "@/data": ["src/data"],
-    },
+      "@/components/*": [
+        "src/components/*"
+      ],
+      "@/components": [
+        "src/components"
+      ],
+      "@/data": [
+        "src/data"
+      ]
+    }
   },
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ]
 }
