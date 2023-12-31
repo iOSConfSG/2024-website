@@ -1,0 +1,31 @@
+name: 🧪 Lint
+
+on:
+  [push]
+  # pull_request:
+  #   branches:
+  #     - main
+
+jobs:
+  lint:
+    name: Check linting
+    runs-on: ubuntu-latest
+    steps:
+      - name: ⏳ Checkout
+        uses: actions/checkout@v3
+
+      - name: 🔋 Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: '.nvmrc'
+
+      - name: Set yarn classic v1
+        run: |
+          corepack enable
+          yarn set version classic
+
+      - name: Install deps
+        run: yarn install
+
+      - name: Run lint
+        run: yarn lint
