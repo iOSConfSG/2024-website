@@ -1,11 +1,13 @@
-import React, { useState } from "react"
+import { useEffect, useState } from "react"
 import { Transition } from "@headlessui/react"
 import { DateTime } from 'luxon'
+import { useSubscription } from "@apollo/client"
 
 import { ScheduleData, SpeakersData } from '@/data'
 import { Tabs, ScheduleTable, SpeakerBioModal } from '@/components'
+import { SCHEDULE_SUB } from '../../gql/getSchedule'
 
-function formatDate(stringDate, timezone) {
+function formatDate(stringDate: string, timezone: string) {
   if (timezone) {
     const rezoned = DateTime.fromISO(stringDate, { zone: timezone }).setLocale('sg')
     return rezoned.toFormat('HH:mm')
@@ -37,7 +39,7 @@ const schedule = {
   },
 }
 
-function rezoneSchedule (schedule, timezone) {
+function rezoneSchedule(schedule, timezone: string) {
   const rezoned = schedule.map(item => {
     return {
       ...item,
@@ -47,16 +49,29 @@ function rezoneSchedule (schedule, timezone) {
   return rezoned
 }
 
-function selectScheduleForTab (currentTab, timezone) {
+function selectScheduleForTab(currentTab, timezone) {
   const location = timezone === SG_TIMEZONE ? 'sg' : 'others'
   return schedule[location].iosconfsg[currentTab]
 }
 
 
-export default function ScheduleSection () {
+export default function ScheduleSection() {
   const [showBio, setShowBio] = useState(false)
   const [selectedSpeaker, setSelectedSpeaker] = useState(null)
 
+  const { data, loading } = useSubscription(SCHEDULE_SUB, {
+    skip: typeof window == "undefined",
+  });
+
+  console.log("data", data)
+
+  useEffect(() => {
+    if (window) {
+      // Checking if it's SSR
+      console.log("check window", window);
+    }
+  }, []);
+  
   const handleShowSpeaker = (name) => {
     const person = SpeakersData.filter(function (speaker) {
       return speaker.name === name
@@ -80,7 +95,7 @@ export default function ScheduleSection () {
   )
 }
 
-function ScheduleTabs (props) {
+function ScheduleTabs(props) {
   const [currentTab, setCurrentTab] = useState('day1')
 
   const [currentTimezone, setCurrentTimezone] = useState(localTimezone)
