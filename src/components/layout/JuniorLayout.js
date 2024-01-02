@@ -24,8 +24,6 @@ export default function JuniorLayout() {
         {/* Hero section */}
         <HeroJunior heroImage={"/images/iosconf2024-junior.gif"} hasSpeakers={false} />
         <JuniorInfo />
-        <Tickets ticketSlug="ios-conf-sg/2024junior"/>
-        <VenueJunior />
       </main>
       <Footer />
     </div>

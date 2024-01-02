@@ -45,13 +45,6 @@ const menuItems = [
     icon: LocationMarkerIcon,
   },
   {
-    id: "junior",
-    title: "Junior",
-    description: "iOS Conf SG 2024 Junior Edition",
-    href: "/junior",
-    icon: StarIcon,
-  },
-  {
     id: "organisers",
     title: "Organisers",
     description: "iOS Conf SG 2024 Organising Team",
