@@ -72,7 +72,7 @@ const speakers = [
   {
     "name": "Shiqing Chen",
     "company": "Principal iOS Engineer at Dyson",
-    "imageUrl": "/images/speakers/Shiqing.jpg",
+    "imageUrl": "/images/speakers/ShiqingChen.jpg",
     "companyUrl": "https://www.dyson.com",
     "xTwitter": "",
     "linkedin": "",
