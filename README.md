@@ -10,7 +10,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Contributing
 
-Feel free to submit your pr if something doesn't look right or if you want to make iOS Conf SG better :)
+Feel free to submit your pr if something doesn't look right or if you want to make iOS Conf SG better.
 
 ## Learn More
 
