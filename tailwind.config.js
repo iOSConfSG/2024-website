@@ -12,15 +12,15 @@ module.exports = {
       },
       tableLayout: ['hover', 'focus'],
       animation: {
-        'infinite-scroll': 'infinite-scroll 100s linear infinite',
+        'infinite-scroll': 'infinite-scroll 100s linear infinite'
       },
       keyframes: {
         'infinite-scroll': {
           from: { transform: 'translateX(0)' },
-          to: { transform: 'translateX(-100%)' },
+          to: { transform: 'translateX(-100%)' }
         }
-      },
-    },
+      }
+    }
   },
-  plugins: [],
+  plugins: []
 }

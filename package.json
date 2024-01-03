@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "prettier . --write && next lint --fix",
-    "lint:ci": "prettier --check . && next lint --fix"
+    "lint:ci": "prettier --check . && next lint"
   },
   "dependencies": {
     "@apollo/client": "^3.8.8",
