@@ -15,11 +15,7 @@
     "allowJs": true,
     "strict": true,
     "jsx": "preserve",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "module": "esnext",
     "noEmit": true,
     "resolveJsonModule": true,
@@ -30,23 +26,12 @@
       }
     ],
     "paths": {
-      "@/components/*": [
-        "src/components/*"
-      ],
-      "@/components": [
-        "src/components"
-      ],
-      "@/data": [
-        "src/data"
-      ]
+      "@/components/*": ["src/components/*"],
+      "@/components": ["src/components"],
+      "@/data": ["src/data"],
+      "@/lib/*": ["src/lib/*"]
     }
   },
-  "exclude": [
-    "node_modules"
-  ],
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx"
-  ]
+  "exclude": ["node_modules"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
 }
