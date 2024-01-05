@@ -1,25 +1,13 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Transition } from '@headlessui/react'
-import { DateTime } from 'luxon'
-import { useSubscription } from '@apollo/client'
 
+import { useSubscription } from '@apollo/client'
 import { ScheduleData, SpeakersData } from '@/data'
 import { Tabs, ScheduleTable, SpeakerBioModal } from '@/components'
 import { SCHEDULE_SUB } from '../../gql/getSchedule'
+import { formatDate } from '@/lib/formatTime'
+import type { LegacySchedule } from '../../data/schedule'
 
-function formatDate(stringDate: string, timezone: string) {
-  if (timezone) {
-    const rezoned = DateTime.fromISO(stringDate, { zone: timezone }).setLocale(
-      'sg'
-    )
-    return rezoned.toFormat('HH:mm')
-  } else {
-    const dt = DateTime.fromISO(stringDate, { zone: localTimezone }).setLocale(
-      'sg'
-    )
-    return dt.toFormat('HH:mm')
-  }
-}
 const localTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone
 const SG_TIMEZONE = 'Asia/Singapore'
 
@@ -47,19 +35,20 @@ const schedule = {
   }
 }
 
-function rezoneSchedule(schedule, timezone: string) {
-  const rezoned = schedule.map((item) => {
+function rezoneSchedule(schedule: any, timezone: string): LegacySchedule {
+  const rezoned = schedule.map((item: any) => {
     return {
       ...item,
-      start_at: formatDate(item.start_at, timezone)
+      start_at: formatDate(item.start_at, timezone, localTimezone)
     }
   })
   return rezoned
 }
 
-function selectScheduleForTab(currentTab, timezone) {
+function selectScheduleForTab(currentTab: string, timezone: string) {
   const location = timezone === SG_TIMEZONE ? 'sg' : 'others'
-  return schedule[location].iosconfsg[currentTab]
+  const localeSchedule = schedule[location]
+  return localeSchedule.iosconfsg[currentTab as Tab] as any
 }
 
 export default function ScheduleSection() {
@@ -72,12 +61,12 @@ export default function ScheduleSection() {
 
   console.log('data', data)
 
-  const handleShowSpeaker = (name) => {
+  const handleShowSpeaker = (name: string) => {
     const person = SpeakersData.filter(function (speaker) {
       return speaker.name === name
     })
     if (person && person.length > 0) {
-      setSelectedSpeaker(person[0])
+      setSelectedSpeaker(person[0] as any)
       setShowBio(true)
     }
   }
@@ -107,13 +96,26 @@ export default function ScheduleSection() {
   )
 }
 
-function ScheduleTabs(props) {
+type ScheduleTabsProps = {
+  showSpeakerBioHandler: (name: string) => void
+}
+
+type Tab = 'day1' | 'day2'
+
+function ScheduleTabs(props: ScheduleTabsProps) {
   const [currentTab, setCurrentTab] = useState('day1')
 
-  const [currentTimezone, setCurrentTimezone] = useState(localTimezone)
+  const [currentTimezone, setCurrentTimezone] = useState('')
   const localSchedule = selectScheduleForTab(currentTab, currentTimezone)
 
-  const selectedTab = (tab) => {
+  useEffect(() => {
+    // Prevent hydration errors
+    if (typeof window !== 'undefined') {
+      setCurrentTimezone(localTimezone)
+    }
+  }, [])
+
+  const selectedTab = (tab: Tab) => {
     setCurrentTab(tab)
   }
 
