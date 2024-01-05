@@ -8,8 +8,9 @@ import { SCHEDULE_SUB } from '../../gql/getSchedule'
 import { formatDate } from '@/lib/formatTime'
 import type { LegacySchedule } from '../../data/schedule'
 
-const localTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone
 const SG_TIMEZONE = 'Asia/Singapore'
+const localTimezone =
+  Intl.DateTimeFormat().resolvedOptions().timeZone || SG_TIMEZONE
 
 const Conference1 = ScheduleData.filter(
   (event) => event.activity === 'iosconfsg24.day1'
