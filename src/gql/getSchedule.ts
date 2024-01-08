@@ -1,8 +1,8 @@
 import { gql } from '@apollo/client'
 
 export const SCHEDULE_SUB = gql`
-  subscription GetSchedule {
-    schedule(where: { activity: { _eq: "iosconfsg23.day1" } }) {
+  subscription GetSchedule($day: String!) {
+    schedule(where: { activity: { _like: $day } }) {
       title
       speakers {
         name

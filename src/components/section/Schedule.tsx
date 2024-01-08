@@ -7,6 +7,9 @@ import { Tabs, ScheduleTable, SpeakerBioModal } from '@/components'
 import { SCHEDULE_SUB } from '../../gql/getSchedule'
 import { formatDate } from '@/lib/formatTime'
 import type { LegacySchedule } from '../../data/schedule'
+import type { CombinedSchedule, RawSchedule } from '../types/schedule'
+
+type Tab = 'day1' | 'day2'
 
 const SG_TIMEZONE = 'Asia/Singapore'
 const localTimezone =
@@ -36,7 +39,7 @@ const schedule = {
   }
 }
 
-function rezoneSchedule(schedule: any, timezone: string): LegacySchedule {
+function rezoneSchedule(schedule: any, timezone: string): RawSchedule {
   const rezoned = schedule.map((item: any) => {
     return {
       ...item,
@@ -49,18 +52,39 @@ function rezoneSchedule(schedule: any, timezone: string): LegacySchedule {
 function selectScheduleForTab(currentTab: string, timezone: string) {
   const location = timezone === SG_TIMEZONE ? 'sg' : 'others'
   const localeSchedule = schedule[location]
+
   return localeSchedule.iosconfsg[currentTab as Tab] as any
 }
 
 export default function ScheduleSection() {
   const [showBio, setShowBio] = useState(false)
   const [selectedSpeaker, setSelectedSpeaker] = useState(null)
+  const [scheduleDynamic, setScheduleDynamic] = useState<
+    CombinedSchedule | undefined
+  >()
 
   const { data, loading } = useSubscription(SCHEDULE_SUB, {
-    skip: typeof window == 'undefined'
+    skip: typeof window == 'undefined',
+    variables: { day: 'iosconfsg23.day1' }
   })
 
   console.log('data', data)
+
+  useEffect(() => {
+    if (typeof data !== 'undefined') {
+      const correctedTimezone =
+        Intl.DateTimeFormat().resolvedOptions().timeZone || SG_TIMEZONE
+      const newSchedule = {
+        others: {
+          iosconfsg: rezoneSchedule(data.schedule, correctedTimezone)
+        },
+        sg: {
+          iosconfsg: rezoneSchedule(data.schedule, SG_TIMEZONE)
+        }
+      }
+      setScheduleDynamic(newSchedule)
+    }
+  }, [data])
 
   const handleShowSpeaker = (name: string) => {
     const person = SpeakersData.filter(function (speaker) {
@@ -76,7 +100,11 @@ export default function ScheduleSection() {
   return (
     <div id="schedule" className="bg-white">
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-        <ScheduleTabs showSpeakerBioHandler={handleShowSpeaker} />
+        <ScheduleTabs
+          showSpeakerBioHandler={handleShowSpeaker}
+          currentTab="day1"
+          scheduleData={scheduleDynamic}
+        />
         <Transition
           show={showBio}
           appear={true}
@@ -99,19 +127,23 @@ export default function ScheduleSection() {
 
 type ScheduleTabsProps = {
   showSpeakerBioHandler: (name: string) => void
+  currentTab: Tab
+  scheduleData: unknown
 }
 
-type Tab = 'day1' | 'day2'
-
 function ScheduleTabs(props: ScheduleTabsProps) {
-  const [currentTab, setCurrentTab] = useState('day1')
+  const [currentTab, setCurrentTab] = useState<Tab>('day1')
 
-  const [currentTimezone, setCurrentTimezone] = useState('')
+  const [currentTimezone, setCurrentTimezone] = useState(SG_TIMEZONE)
   const localSchedule = selectScheduleForTab(currentTab, currentTimezone)
 
   useEffect(() => {
     // Prevent hydration errors
     if (typeof window !== 'undefined') {
+      console.log(
+        'check timezone',
+        Intl.DateTimeFormat().resolvedOptions().timeZone
+      )
       setCurrentTimezone(localTimezone)
     }
   }, [])

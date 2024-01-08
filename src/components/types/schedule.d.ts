@@ -14,3 +14,12 @@ export type RawSpeaker = {
   name: string
   __typename: string
 }
+
+export type ScheduleTimeZone = {
+  iosconfig: RawSchedule[]
+}
+
+export type CombinedSchedule = {
+  others: ScheduleTimeZone
+  sg: ScheduleTimeZone
+}
