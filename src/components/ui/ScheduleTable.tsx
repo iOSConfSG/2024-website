@@ -62,6 +62,7 @@ function ScheduleTable(props: Props) {
                           className="h-16 w-16 rounded-full"
                           src={speaker?.image_url || ''}
                           //src={`/images/speakers/${talk.speaker_image}.jpg`}
+                          unoptimized
                           width={64}
                           height={64}
                           onClick={() => showSpeakerBioHandler(speaker?.name)}
