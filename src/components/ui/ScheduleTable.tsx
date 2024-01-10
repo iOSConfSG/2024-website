@@ -1,18 +1,21 @@
-import React from 'react'
 import classname from 'classnames'
 import Image from 'next/image'
 import type { LegacySchedule } from 'src/data/schedule'
-import { CombinedSchedule } from '../types/schedule'
+import type { RawSchedule, RawSpeaker } from '../types/schedule'
+// import speakers from 'src/data/speakers'
+
+type ConfDay = 'iosconfsg24.day1' | 'iosconfsg24.day2'
 
 type Props = {
-  schedule: LegacySchedule[]
-  tab: 'day1' | 'day2'
+  schedule?: LegacySchedule[]
+  // tab: 'day1' | 'day2'
+  day: ConfDay
   showSpeakerBioHandler: (name: string) => void
-  scheduleDynamic: CombinedSchedule
+  scheduleDynamic: RawSchedule[]
 }
 
 function ScheduleTable(props: Props) {
-  const { schedule, tab, showSpeakerBioHandler, scheduleDynamic } = props
+  const { schedule, day, showSpeakerBioHandler, scheduleDynamic } = props
 
   const classnameFor = (index: number) => {
     return classname('hover:bg-orange-100', {
@@ -24,12 +27,14 @@ function ScheduleTable(props: Props) {
   return (
     <table
       className="table-auto w-full divide-ydivide-gray-200"
-      data-testid={tab}
+      data-testid={day}
     >
       <tbody className="bg-white divide-y divide-x divide-gray-200">
         {scheduleDynamic &&
           scheduleDynamic.map((talk, index) => {
-            if (talk.speaker_name === 'Organiser') {
+            const speaker: RawSpeaker | undefined =
+              talk.speakers.length > 0 ? talk.speakers[0] : undefined
+            if (!speaker) {
               return (
                 <tr key={index} className={classnameFor(index)}>
                   <td className="px-1 sm:px-6 py-3 whitespace-normal">
@@ -37,7 +42,7 @@ function ScheduleTable(props: Props) {
                   </td>
                   <td
                     className="px-1 sm:px-6 py-3 whitespace-normal"
-                    colSpan="2"
+                    colSpan={2}
                   >
                     {talk.title}
                   </td>
@@ -55,25 +60,22 @@ function ScheduleTable(props: Props) {
                         <Image
                           alt="speaker"
                           className="h-16 w-16 rounded-full"
-                          src={`/images/speakers/${talk.speaker_image}.jpg`}
+                          src={speaker?.image_url || ''}
+                          //src={`/images/speakers/${talk.speaker_image}.jpg`}
                           width={64}
                           height={64}
-                          onClick={() =>
-                            showSpeakerBioHandler(talk.speaker_name)
-                          }
+                          onClick={() => showSpeakerBioHandler(speaker?.name)}
                         />
                       </div>
                       <div className="min-w-0 flex-1 flex flex-col items-left px-1 sm:px-4">
                         <button
                           className="font-medium text-left text-orange-600 my-0 underline"
-                          onClick={() =>
-                            showSpeakerBioHandler(talk.speaker_name)
-                          }
+                          onClick={() => showSpeakerBioHandler(speaker?.name)}
                         >
-                          {talk.speaker_name}
+                          {speaker.name}
                         </button>
                         <p className="text-sm text-gray-600">
-                          {talk.speaker_company}
+                          {speaker.company}
                         </p>
                       </div>
                     </div>

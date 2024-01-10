@@ -1,7 +1,7 @@
 export type RawSchedule = {
   activity: string
   id: number
-  speakers: Speaker[]
+  speakers: RawSpeaker[] | []
   start_at: string
   talk_description: string
   talk_type: string
@@ -12,6 +12,9 @@ export type RawSchedule = {
 export type RawSpeaker = {
   image_url: string | null
   name: string
+  company: string
+  short_bio?: string
+  linkedin?: string
   __typename: string
 }
 

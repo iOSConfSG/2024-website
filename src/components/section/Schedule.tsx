@@ -1,15 +1,15 @@
-import { useEffect, useState } from 'react'
 import { Transition } from '@headlessui/react'
+import { useEffect, useState } from 'react'
 
-import { useSubscription } from '@apollo/client'
+import { ScheduleTable, SpeakerBioModal, Tabs } from '@/components'
 import { ScheduleData, SpeakersData } from '@/data'
-import { Tabs, ScheduleTable, SpeakerBioModal } from '@/components'
-import { SCHEDULE_SUB } from '../../gql/getSchedule'
 import { formatDate } from '@/lib/formatTime'
-import type { LegacySchedule } from '../../data/schedule'
-import type { CombinedSchedule, RawSchedule } from '../types/schedule'
+import { useSubscription } from '@apollo/client'
+import { SCHEDULE_SUB } from '../../gql/getSchedule'
+import type { RawSchedule } from '../types/schedule'
 
 type Tab = 'day1' | 'day2'
+type ConfDay = 'iosconfsg24.day1' | 'iosconfsg24.day2'
 
 const SG_TIMEZONE = 'Asia/Singapore'
 const localTimezone =
@@ -39,7 +39,7 @@ const schedule = {
   }
 }
 
-function rezoneSchedule(schedule: any, timezone: string): RawSchedule {
+function rezoneSchedule(schedule: any, timezone: string): RawSchedule[] {
   const rezoned = schedule.map((item: any) => {
     return {
       ...item,
@@ -52,7 +52,6 @@ function rezoneSchedule(schedule: any, timezone: string): RawSchedule {
 function selectScheduleForTab(currentTab: string, timezone: string) {
   const location = timezone === SG_TIMEZONE ? 'sg' : 'others'
   const localeSchedule = schedule[location]
-
   return localeSchedule.iosconfsg[currentTab as Tab] as any
 }
 
@@ -60,28 +59,27 @@ export default function ScheduleSection() {
   const [showBio, setShowBio] = useState(false)
   const [selectedSpeaker, setSelectedSpeaker] = useState(null)
   const [scheduleDynamic, setScheduleDynamic] = useState<
-    CombinedSchedule | undefined
+    RawSchedule[] | undefined
   >()
+  const [selectedDay, setSelectedDay] = useState<ConfDay>('iosconfsg24.day1')
 
   const { data, loading } = useSubscription(SCHEDULE_SUB, {
     skip: typeof window == 'undefined',
-    variables: { day: 'iosconfsg23.day1' }
+    variables: { day: selectedDay }
   })
 
-  console.log('data', data)
+  const handleSelectedTab = (day: ConfDay) => {
+    setSelectedDay(day)
+  }
+
+  // console.log('data', data)
 
   useEffect(() => {
     if (typeof data !== 'undefined') {
       const correctedTimezone =
         Intl.DateTimeFormat().resolvedOptions().timeZone || SG_TIMEZONE
-      const newSchedule = {
-        others: {
-          iosconfsg: rezoneSchedule(data.schedule, correctedTimezone)
-        },
-        sg: {
-          iosconfsg: rezoneSchedule(data.schedule, SG_TIMEZONE)
-        }
-      }
+      const newSchedule = rezoneSchedule(data.schedule, correctedTimezone)
+      console.log('new', newSchedule)
       setScheduleDynamic(newSchedule)
     }
   }, [data])
@@ -101,9 +99,11 @@ export default function ScheduleSection() {
     <div id="schedule" className="bg-white">
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
         <ScheduleTabs
+          handleSelectedTab={handleSelectedTab}
           showSpeakerBioHandler={handleShowSpeaker}
           currentTab="day1"
-          scheduleData={scheduleDynamic}
+          day={selectedDay}
+          scheduleData={scheduleDynamic || []}
         />
         <Transition
           show={showBio}
@@ -126,16 +126,27 @@ export default function ScheduleSection() {
 }
 
 type ScheduleTabsProps = {
+  handleSelectedTab: (name: ConfDay) => void
   showSpeakerBioHandler: (name: string) => void
   currentTab: Tab
-  scheduleData: unknown
+  day: ConfDay
+  scheduleData: RawSchedule[]
 }
 
 function ScheduleTabs(props: ScheduleTabsProps) {
-  const [currentTab, setCurrentTab] = useState<Tab>('day1')
+  const {
+    day,
+    scheduleData,
+    handleSelectedTab,
+    showSpeakerBioHandler,
+    ...rest
+  } = props
+  // const [currentTab, setCurrentTab] = useState<Tab>('day1')
 
   const [currentTimezone, setCurrentTimezone] = useState(SG_TIMEZONE)
-  const localSchedule = selectScheduleForTab(currentTab, currentTimezone)
+  // const localSchedule = selectScheduleForTab(currentTab, currentTimezone)
+
+  // const [selectedTab, setSelectedTab] = useState<ConfDay>(defaultDay)
 
   useEffect(() => {
     // Prevent hydration errors
@@ -148,9 +159,9 @@ function ScheduleTabs(props: ScheduleTabsProps) {
     }
   }, [])
 
-  const selectedTab = (tab: Tab) => {
-    setCurrentTab(tab)
-  }
+  // const handleCurrentTab = (tab: Tab) => {
+  //   setCurrentTab(tab)
+  // }
 
   const rerenderInSgTime = () => {
     setCurrentTimezone(SG_TIMEZONE)
@@ -162,9 +173,9 @@ function ScheduleTabs(props: ScheduleTabsProps) {
 
   return (
     <>
-      <Tabs defaultSelected={'day1'} currentTab={selectedTab}>
-        <Tabs.Tab labelKey="day1">18 January</Tabs.Tab>
-        <Tabs.Tab labelKey="day2">19 January</Tabs.Tab>
+      <Tabs defaultSelected={'iosconfsg24.day1'} currentTab={handleSelectedTab}>
+        <Tabs.Tab labelKey="iosconfsg24.day1">18 January</Tabs.Tab>
+        <Tabs.Tab labelKey="iosconfsg24.day2">19 January</Tabs.Tab>
       </Tabs>
       <p className="text-sm mx-4 mx-0 my-4">
         Times below are shown in your local time zone{' '}
@@ -183,7 +194,14 @@ function ScheduleTabs(props: ScheduleTabsProps) {
         )}
       </p>
       <div className="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
-        <ScheduleTable schedule={localSchedule} tab={currentTab} {...props} />
+        <ScheduleTable
+          // schedule={localSchedule}
+          scheduleDynamic={scheduleData}
+          // tab={day}
+          day={day}
+          showSpeakerBioHandler={showSpeakerBioHandler}
+          // {...props}
+        />
       </div>
       <p className="text-sm mx-4 sm:mx-0">
         Schedule may change without prior notice

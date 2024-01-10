@@ -7,6 +7,11 @@ export const SCHEDULE_SUB = gql`
       speakers {
         name
         image_url
+        company
+        id
+        talk_id
+        short_bio
+        linkedin
       }
       id
       talk_description
