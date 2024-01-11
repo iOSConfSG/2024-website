@@ -1,21 +1,17 @@
 import classname from 'classnames'
 import Image from 'next/image'
-import type { LegacySchedule } from 'src/data/schedule'
 import type { RawSchedule, RawSpeaker } from '../types/schedule'
-// import speakers from 'src/data/speakers'
 
 type ConfDay = 'iosconfsg24.day1' | 'iosconfsg24.day2'
 
 type Props = {
-  schedule?: LegacySchedule[]
-  // tab: 'day1' | 'day2'
   day: ConfDay
   showSpeakerBioHandler: (name: string) => void
   scheduleDynamic: RawSchedule[]
 }
 
 function ScheduleTable(props: Props) {
-  const { schedule, day, showSpeakerBioHandler, scheduleDynamic } = props
+  const { day, showSpeakerBioHandler, scheduleDynamic } = props
 
   const classnameFor = (index: number) => {
     return classname('hover:bg-orange-100', {
@@ -60,8 +56,7 @@ function ScheduleTable(props: Props) {
                         <Image
                           alt="speaker"
                           className="h-16 w-16 rounded-full"
-                          src={speaker?.image_url || ''}
-                          //src={`/images/speakers/${talk.speaker_image}.jpg`}
+                          src={speaker?.image_url || '/images/speakers/who.jpg'}
                           unoptimized
                           width={64}
                           height={64}

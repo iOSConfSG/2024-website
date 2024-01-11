@@ -1,43 +1,22 @@
+'use client'
+
 import { Transition } from '@headlessui/react'
 import { useEffect, useState } from 'react'
 
 import { ScheduleTable, SpeakerBioModal, Tabs } from '@/components'
-import { ScheduleData, SpeakersData } from '@/data'
+import { SpeakersData } from '@/data'
 import { formatDate } from '@/lib/formatTime'
 import { useSubscription } from '@apollo/client'
 import { SCHEDULE_SUB } from '../../gql/getSchedule'
 import type { RawSchedule } from '../types/schedule'
 
-type Tab = 'day1' | 'day2'
 type ConfDay = 'iosconfsg24.day1' | 'iosconfsg24.day2'
 
 const SG_TIMEZONE = 'Asia/Singapore'
 const localTimezone =
   Intl.DateTimeFormat().resolvedOptions().timeZone || SG_TIMEZONE
 
-const Conference1 = ScheduleData.filter(
-  (event) => event.activity === 'iosconfsg24.day1'
-)
-const Conference2 = ScheduleData.filter(
-  (event) => event.activity === 'iosconfsg24.day2'
-)
-const sgConference1 = rezoneSchedule(Conference1, SG_TIMEZONE)
-const sgConference2 = rezoneSchedule(Conference2, SG_TIMEZONE)
-
-const schedule = {
-  others: {
-    iosconfsg: {
-      day1: rezoneSchedule(Conference1, localTimezone),
-      day2: rezoneSchedule(Conference2, localTimezone)
-    }
-  },
-  sg: {
-    iosconfsg: {
-      day1: sgConference1,
-      day2: sgConference2
-    }
-  }
-}
+console.log('SSR timezone', localTimezone)
 
 function rezoneSchedule(schedule: any, timezone: string): RawSchedule[] {
   const rezoned = schedule.map((item: any) => {
@@ -47,12 +26,6 @@ function rezoneSchedule(schedule: any, timezone: string): RawSchedule[] {
     }
   })
   return rezoned
-}
-
-function selectScheduleForTab(currentTab: string, timezone: string) {
-  const location = timezone === SG_TIMEZONE ? 'sg' : 'others'
-  const localeSchedule = schedule[location]
-  return localeSchedule.iosconfsg[currentTab as Tab] as any
 }
 
 export default function ScheduleSection() {
@@ -71,8 +44,6 @@ export default function ScheduleSection() {
   const handleSelectedTab = (day: ConfDay) => {
     setSelectedDay(day)
   }
-
-  // console.log('data', data)
 
   useEffect(() => {
     if (typeof data !== 'undefined') {
@@ -101,7 +72,6 @@ export default function ScheduleSection() {
         <ScheduleTabs
           handleSelectedTab={handleSelectedTab}
           showSpeakerBioHandler={handleShowSpeaker}
-          currentTab="day1"
           day={selectedDay}
           scheduleData={scheduleDynamic || []}
         />
@@ -128,25 +98,13 @@ export default function ScheduleSection() {
 type ScheduleTabsProps = {
   handleSelectedTab: (name: ConfDay) => void
   showSpeakerBioHandler: (name: string) => void
-  currentTab: Tab
   day: ConfDay
   scheduleData: RawSchedule[]
 }
 
 function ScheduleTabs(props: ScheduleTabsProps) {
-  const {
-    day,
-    scheduleData,
-    handleSelectedTab,
-    showSpeakerBioHandler,
-    ...rest
-  } = props
-  // const [currentTab, setCurrentTab] = useState<Tab>('day1')
-
+  const { day, scheduleData, handleSelectedTab, showSpeakerBioHandler } = props
   const [currentTimezone, setCurrentTimezone] = useState(SG_TIMEZONE)
-  // const localSchedule = selectScheduleForTab(currentTab, currentTimezone)
-
-  // const [selectedTab, setSelectedTab] = useState<ConfDay>(defaultDay)
 
   useEffect(() => {
     // Prevent hydration errors
@@ -159,13 +117,8 @@ function ScheduleTabs(props: ScheduleTabsProps) {
     }
   }, [])
 
-  // const handleCurrentTab = (tab: Tab) => {
-  //   setCurrentTab(tab)
-  // }
-
   const rerenderInSgTime = () => {
     setCurrentTimezone(SG_TIMEZONE)
-    // setCurrentSchedule(sgScheduleForTab(currentTab))
   }
   const rerenderInLocalTime = () => {
     setCurrentTimezone(localTimezone)
@@ -195,12 +148,9 @@ function ScheduleTabs(props: ScheduleTabsProps) {
       </p>
       <div className="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
         <ScheduleTable
-          // schedule={localSchedule}
           scheduleDynamic={scheduleData}
-          // tab={day}
           day={day}
           showSpeakerBioHandler={showSpeakerBioHandler}
-          // {...props}
         />
       </div>
       <p className="text-sm mx-4 sm:mx-0">
