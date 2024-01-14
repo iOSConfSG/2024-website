@@ -27,6 +27,15 @@ const sponsors = {
       width: 281
     },
   ],
+  coffee: [
+    {
+      name: "STACK Community by GovTech",
+      imageHref: "http://go.gov.sg/stackmeetup",
+      imageUrl: "/images/logo-stack.png",
+      height: 500,
+      width: 281
+    },
+  ],
 }
 
 export default sponsors
