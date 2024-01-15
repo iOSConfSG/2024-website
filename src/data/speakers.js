@@ -1,9 +1,9 @@
 const speakers = [
   {
     "name": "Ritesh Gupta",
-    "company": "Senior iOS Engineer, Atlassian",
+    "company": "Senior iOS Engineer",
     "imageUrl": "/images/speakers/RiteshGupta.jpg",
-    "companyUrl": "https://www.atlassian.com",
+    "companyUrl": "https://riteshhh.com",
     "xTwitter": "_riteshhh",
     "linkedin": "ritesh-gupta-a4602124",
     "shortBio": "Ritesh Gupta is an iOS engineer by day and a Kotlin Multiplatform expert by night. He's known for his contributions to iOS-Dev-Weekly's 295th issue and his prolific writing on Medium. Explore Ritesh's tech adventures at http://riteshhh.com/ – where coding meets creativity.",
