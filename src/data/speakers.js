@@ -149,5 +149,15 @@ const speakers = [
     "shortBio": "Yanni is an iOS developer since 2013. He has a passion for Swift, reactive programming, Rust, and Flutter. Yanni has a 'code obsession' and enjoys pushing code to its limits. He firmly believes that cryptocurrency and AI are the future.",
     "bio": "Yanni is an iOS developer since 2013. He has a passion for Swift, reactive programming, Rust, and Flutter. Yanni has a 'code obsession' and enjoys pushing code to its limits. He firmly believes that cryptocurrency and AI are the future.",
   },
+  {
+    "name": "Sophie Hudson",
+    "company": "Student, Swift Developer",
+    "imageUrl": "/images/speakers/SophieHudson.jpg",
+    "companyUrl": "",
+    "xTwitter": "PinkerStraws",
+    "linkedin": "",
+    "shortBio": "Sophie splits her time between writing code, playing Zelda, and trying to teach her dogs to do tricks. Right now she’s working on a SpriteKit game, but any spare time is devoted to reading as much manga as she can get her hands on.",
+    "bio": "Sophie splits her time between writing code, playing Zelda, and trying to teach her dogs to do tricks. Right now she’s working on a SpriteKit game, but any spare time is devoted to reading as much manga as she can get her hands on.",
+  },
 ]
 export default speakers
