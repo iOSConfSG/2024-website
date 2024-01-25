@@ -1,6 +1,6 @@
 
 import { PageTitle, Header, Footer, SpeakerBioItem } from "@/components"
-import { OrganiserData } from "@/data"
+import { OrganiserData, Volunteers } from "@/data"
 
 export default function Organisers () {
   return (
@@ -48,6 +48,19 @@ export default function Organisers () {
                   return (
                     <li key={index}>
                       <SpeakerBioItem speaker={organiser} />
+                    </li>
+                  )
+                })
+              }
+            </ul>
+          </div>
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 my-6">
+            <ul className="mx-auto sm:grid sm:grid-cols-2 sm:gap-16 sm:space-y-0 lg:grid-cols-3 lg:max-w-5xl">
+              {
+                Volunteers.map((dev, index) => {
+                  return (
+                    <li key={index}>
+                      <SpeakerBioItem speaker={dev} />
                     </li>
                   )
                 })
