@@ -1,5 +1,15 @@
 const speakers = [
   {
+    "name": "Erica Sadun",
+    "company": "Author and Developer Advocate",
+    "imageUrl": "/images/speakers/EricaSadun.jpg",
+    "companyUrl": "https://www.ericasadun.com",
+    "xTwitter": "ericasadun",
+    "linkedin": "",
+    "shortBio": "Erica Sadun developed apps for the iPhone before there was an App Store. She also wrote lots of books and contributed proposals to the Swift Programming Language. Sadun raised several children in her spare hours, making sure they were fed and well watered.",
+    "bio": "Erica Sadun developed apps for the iPhone before there was an App Store. She also wrote lots of books and contributed proposals to the Swift Programming Language. She killed the C-style for-loop with its potentially unsafe mechanics in a language that pledged safety. Notably, Sadun is responsible for more rejected proposals for the Swift Programming language than just about anyone else. Swift originator Chris Lattner called one of those proposals (collection-style commas in method declarations) an 'abomination'. Sadun maintains she was right and he and the core team were wrong about this. A language with defaults deserves clean diffs when commenting out lines. Sadun has blogged at TUAW/Engadget, Ars Technica, O’Reilly Media, and Lifehacker. She has taught, documented, prototyped, and spent lots of time dusting books as work-study librarian during college. In wandering the halls of academia and boot camp, she collected several degrees and many students along the way. Sadun raised several children in her spare hours, making sure they were fed and well watered.",
+  },
+  {
     "name": "Ritesh Gupta",
     "company": "Senior iOS Engineer",
     "imageUrl": "/images/speakers/RiteshGupta.jpg",
