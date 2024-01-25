@@ -63,7 +63,7 @@ const volunteers = [
       "name": "Shaoqi",
       "imageUrl": "https://ik.imagekit.io/iosconfsg/volunteers/shaoqi.png?updatedAt=1706187776417",
       "xTwitter": "",
-      "linkedin": "",
+      "linkedin": "sethlsq",
     },
     {
       "name": "Steven Lee",
