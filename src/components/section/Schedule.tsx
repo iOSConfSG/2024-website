@@ -38,16 +38,6 @@ export default function ScheduleSection() {
     setSelectedDay(day)
   }
 
-  useEffect(() => {
-    if (typeof data !== 'undefined') {
-      const correctedTimezone =
-        Intl.DateTimeFormat().resolvedOptions().timeZone || SG_TIMEZONE
-      const newSchedule = rezoneSchedule(data.schedule, correctedTimezone)
-      console.log('new', newSchedule)
-      setScheduleDynamic(newSchedule)
-    }
-  }, [])
-
   const handleShowSpeaker = (name: string) => {
     const person = SpeakersData.filter(function (speaker) {
       return speaker.name === name
