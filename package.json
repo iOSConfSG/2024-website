@@ -23,7 +23,7 @@
     "luxon": "^3.1.0",
     "moment": "^2.29.4",
     "moment-timezone": "^0.5.38",
-    "next": "^13.4.19",
+    "next": "^15.5.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "swiper": "^8.3.2"
