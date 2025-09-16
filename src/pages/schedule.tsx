@@ -1,5 +1,4 @@
 import { PageTitle, Header, Footer, Schedule } from '@/components'
-import { ApolloWrapper } from '@/lib/ApolloWrapper'
 
 export default function SchedulePage() {
   return (
@@ -8,9 +7,7 @@ export default function SchedulePage() {
       <main>
         <div className="relative">
           <PageTitle title="Schedule" />
-          <ApolloWrapper>
             <Schedule />
-          </ApolloWrapper>
         </div>
       </main>
       <Footer />

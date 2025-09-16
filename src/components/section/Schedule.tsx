@@ -6,8 +6,6 @@ import { useEffect, useState } from 'react'
 import { ScheduleTable, SpeakerBioModal, Tabs } from '@/components'
 import { SpeakersData } from '@/data'
 import { formatDate } from '@/lib/formatTime'
-import { useSubscription } from '@apollo/client'
-import { SCHEDULE_SUB } from '../../gql/getSchedule'
 import type { RawSchedule } from '../types/schedule'
 
 type ConfDay = 'iosconfsg24.day1' | 'iosconfsg24.day2'
@@ -36,11 +34,6 @@ export default function ScheduleSection() {
   >()
   const [selectedDay, setSelectedDay] = useState<ConfDay>('iosconfsg24.day1')
 
-  const { data, loading } = useSubscription(SCHEDULE_SUB, {
-    skip: typeof window == 'undefined',
-    variables: { day: selectedDay }
-  })
-
   const handleSelectedTab = (day: ConfDay) => {
     setSelectedDay(day)
   }
@@ -53,7 +46,7 @@ export default function ScheduleSection() {
       console.log('new', newSchedule)
       setScheduleDynamic(newSchedule)
     }
-  }, [data])
+  }, [])
 
   const handleShowSpeaker = (name: string) => {
     const person = SpeakersData.filter(function (speaker) {
